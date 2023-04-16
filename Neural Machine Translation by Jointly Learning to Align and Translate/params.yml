@@ -1,0 +1,7 @@
+model_parameters:
+  epochs: 1
+  hidden_size: 256
+  learning_rate: 0.01
+  num_workers: 5
+  run_name: test2
+  test_split: 0.2

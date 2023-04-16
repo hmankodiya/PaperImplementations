@@ -1,0 +1,4 @@
+/mlruns
+/lightning_logs
+__pycache__
+Seq2SeqLigAI.ipynb
