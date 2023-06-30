@@ -52,24 +52,6 @@ def index_from_sentence(lang, sentence):
         index_array.append(lang.word2index[word])
     return np.array(index_array)
 
-
-def create_mask(input_batch, target_batch, max_sequence_length):
-
-    encoder_self_attn_padding_mask = torch.full((max_sequence_length,), False)
-    decoder_self_attn_padding_mask = torch.full((max_sequence_length,), False)
-    encoder_cross_attn_padding_mask = torch.full((max_sequence_length, ), False)
-    decoder_self_attn_mask = torch.full((max_sequence_length, max_sequence_length), True)
-        
-    # for i in range(batch_size):
-    input_sentence_length, target_sentence_length = len(input_batch), len(target_batch)
-    encoder_self_attn_padding_mask[input_sentence_length:] = True
-    decoder_self_attn_padding_mask[target_sentence_length:] = True
-    encoder_cross_attn_padding_mask[input_sentence_length:] = True
-    decoder_self_attn_mask = torch.triu(decoder_self_attn_mask, diagonal = 1)
-
-    return encoder_self_attn_padding_mask, decoder_self_attn_padding_mask,  encoder_cross_attn_padding_mask, decoder_self_attn_mask
-
-
 class PredictionDataset(torch.utils.data.Dataset):
     def __init__(self, sentences, input_language, target_language, max_sequence_length):
         self.input_language = input_language
