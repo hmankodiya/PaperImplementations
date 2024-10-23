@@ -1,0 +1,501 @@
+file_name,file_path,height,width,image_id,caption
+COCO_train2014_000000000009.jpg,./coco-2014/train/data/COCO_train2014_000000000009.jpg,480,640,9,closeup of bins of food that include broccoli and bread
+COCO_train2014_000000000009.jpg,./coco-2014/train/data/COCO_train2014_000000000009.jpg,480,640,9,a meal is presented in brightly colored plastic trays
+COCO_train2014_000000000009.jpg,./coco-2014/train/data/COCO_train2014_000000000009.jpg,480,640,9,there are containers filled with different kinds of foods
+COCO_train2014_000000000009.jpg,./coco-2014/train/data/COCO_train2014_000000000009.jpg,480,640,9,colorful dishes holding meat vegetables fruit and bread
+COCO_train2014_000000000009.jpg,./coco-2014/train/data/COCO_train2014_000000000009.jpg,480,640,9,a bunch of trays that have different food
+COCO_train2014_000000000025.jpg,./coco-2014/train/data/COCO_train2014_000000000025.jpg,426,640,25,a giraffe standing up nearby a tree 
+COCO_train2014_000000000025.jpg,./coco-2014/train/data/COCO_train2014_000000000025.jpg,426,640,25,a giraffe standing next to a forest filled with trees
+COCO_train2014_000000000025.jpg,./coco-2014/train/data/COCO_train2014_000000000025.jpg,426,640,25,two giraffes standing in a tree filled area
+COCO_train2014_000000000025.jpg,./coco-2014/train/data/COCO_train2014_000000000025.jpg,426,640,25,a giraffe mother with its baby in the forest
+COCO_train2014_000000000025.jpg,./coco-2014/train/data/COCO_train2014_000000000025.jpg,426,640,25,a giraffe eating food from the top of the tree
+COCO_train2014_000000000030.jpg,./coco-2014/train/data/COCO_train2014_000000000030.jpg,428,640,30,a white vase with many flowers on a stage
+COCO_train2014_000000000030.jpg,./coco-2014/train/data/COCO_train2014_000000000030.jpg,428,640,30,a white vase filled with different colored flowers
+COCO_train2014_000000000030.jpg,./coco-2014/train/data/COCO_train2014_000000000030.jpg,428,640,30,a vase with red and white flowers outside on a sunny day
+COCO_train2014_000000000030.jpg,./coco-2014/train/data/COCO_train2014_000000000030.jpg,428,640,30,white vase with different colored flowers sitting inside of it 
+COCO_train2014_000000000030.jpg,./coco-2014/train/data/COCO_train2014_000000000030.jpg,428,640,30,a flower vase is sitting on a porch stand
+COCO_train2014_000000000034.jpg,./coco-2014/train/data/COCO_train2014_000000000034.jpg,425,640,34,a zebra grazing on lush green grass in a field
+COCO_train2014_000000000034.jpg,./coco-2014/train/data/COCO_train2014_000000000034.jpg,425,640,34,a zebra grazing on grass in a green open field
+COCO_train2014_000000000034.jpg,./coco-2014/train/data/COCO_train2014_000000000034.jpg,425,640,34,a lone zebra grazing in some green grass
+COCO_train2014_000000000034.jpg,./coco-2014/train/data/COCO_train2014_000000000034.jpg,425,640,34,the zebra is eating grass in the sun
+COCO_train2014_000000000034.jpg,./coco-2014/train/data/COCO_train2014_000000000034.jpg,425,640,34,zebra reaching its head down to ground where grass is 
+COCO_train2014_000000000036.jpg,./coco-2014/train/data/COCO_train2014_000000000036.jpg,640,481,36,woman in swim suit holding parasol on sunny day
+COCO_train2014_000000000036.jpg,./coco-2014/train/data/COCO_train2014_000000000036.jpg,640,481,36,a girl in a bathing suit with a pink umbrella
+COCO_train2014_000000000036.jpg,./coco-2014/train/data/COCO_train2014_000000000036.jpg,640,481,36,a woman with an umbrella near the sea
+COCO_train2014_000000000036.jpg,./coco-2014/train/data/COCO_train2014_000000000036.jpg,640,481,36,a woman in a floral swimsuit holds a pink umbrella
+COCO_train2014_000000000036.jpg,./coco-2014/train/data/COCO_train2014_000000000036.jpg,640,481,36,a woman posing for the camera holding a pink open umbrella and wearing a bright floral ruched bathing suit by a life guard stand with lake green trees and a blue sky with a few clouds behind
+COCO_train2014_000000000049.jpg,./coco-2014/train/data/COCO_train2014_000000000049.jpg,500,381,49,a pair of horses performing tricks in a field 
+COCO_train2014_000000000049.jpg,./coco-2014/train/data/COCO_train2014_000000000049.jpg,500,381,49,two men are on horses that are reared back
+COCO_train2014_000000000049.jpg,./coco-2014/train/data/COCO_train2014_000000000049.jpg,500,381,49,two horses and their riders on some grass
+COCO_train2014_000000000049.jpg,./coco-2014/train/data/COCO_train2014_000000000049.jpg,500,381,49,a couple of men riding horses on top of a green field
+COCO_train2014_000000000049.jpg,./coco-2014/train/data/COCO_train2014_000000000049.jpg,500,381,49,two costumed horse riders make their horses stand on their hind legs
+COCO_train2014_000000000061.jpg,./coco-2014/train/data/COCO_train2014_000000000061.jpg,488,640,61,some people in the woods riding two elephants
+COCO_train2014_000000000061.jpg,./coco-2014/train/data/COCO_train2014_000000000061.jpg,488,640,61,some people who are riding on top of elephants
+COCO_train2014_000000000061.jpg,./coco-2014/train/data/COCO_train2014_000000000061.jpg,488,640,61,there are people riding elephants in the middle of a forest
+COCO_train2014_000000000061.jpg,./coco-2014/train/data/COCO_train2014_000000000061.jpg,488,640,61,several elephants in the jungle carrying people on their backs
+COCO_train2014_000000000061.jpg,./coco-2014/train/data/COCO_train2014_000000000061.jpg,488,640,61,they are brave for riding in the jungle on those elephants
+COCO_train2014_000000000064.jpg,./coco-2014/train/data/COCO_train2014_000000000064.jpg,640,480,64,a clock is seen in front of a tall tree
+COCO_train2014_000000000064.jpg,./coco-2014/train/data/COCO_train2014_000000000064.jpg,640,480,64,a pole with a clock that reads 610 by a white car 
+COCO_train2014_000000000064.jpg,./coco-2014/train/data/COCO_train2014_000000000064.jpg,640,480,64,a black and silver clock tower at an intersection near a tree
+COCO_train2014_000000000064.jpg,./coco-2014/train/data/COCO_train2014_000000000064.jpg,640,480,64,a very pretty clock on the side of a road
+COCO_train2014_000000000064.jpg,./coco-2014/train/data/COCO_train2014_000000000064.jpg,640,480,64,a clock sits on top of a black pole near a tree on a sidewalk near a crosswalk
+COCO_train2014_000000000071.jpg,./coco-2014/train/data/COCO_train2014_000000000071.jpg,426,640,71,a train coming to a stop on the tracks out side
+COCO_train2014_000000000071.jpg,./coco-2014/train/data/COCO_train2014_000000000071.jpg,426,640,71,a train coming down the tracks in the city
+COCO_train2014_000000000071.jpg,./coco-2014/train/data/COCO_train2014_000000000071.jpg,426,640,71,a passenger train glides around a curve on the outer track
+COCO_train2014_000000000071.jpg,./coco-2014/train/data/COCO_train2014_000000000071.jpg,426,640,71,the very long train is travelling down the tracks
+COCO_train2014_000000000071.jpg,./coco-2014/train/data/COCO_train2014_000000000071.jpg,426,640,71,a train engine carrying many carts down a track
+COCO_train2014_000000000072.jpg,./coco-2014/train/data/COCO_train2014_000000000072.jpg,640,427,72,the two giraffes appear to be hugging each other
+COCO_train2014_000000000072.jpg,./coco-2014/train/data/COCO_train2014_000000000072.jpg,640,427,72,two giraffes hang out near trees and nuzzle up to each other
+COCO_train2014_000000000072.jpg,./coco-2014/train/data/COCO_train2014_000000000072.jpg,640,427,72,two zebras seem to be embracing in the wild 
+COCO_train2014_000000000072.jpg,./coco-2014/train/data/COCO_train2014_000000000072.jpg,640,427,72,a couple of giraffe standing next to some trees
+COCO_train2014_000000000072.jpg,./coco-2014/train/data/COCO_train2014_000000000072.jpg,640,427,72,a couple of giraffe snuggling each other in a forest
+COCO_train2014_000000000077.jpg,./coco-2014/train/data/COCO_train2014_000000000077.jpg,375,500,77,a time lapse image of a guy on a skate board
+COCO_train2014_000000000077.jpg,./coco-2014/train/data/COCO_train2014_000000000077.jpg,375,500,77,group of boys performing skateboard trick on ramp with graffiti on it
+COCO_train2014_000000000077.jpg,./coco-2014/train/data/COCO_train2014_000000000077.jpg,375,500,77,a group of teenagers jumping a ramp on their skateboards
+COCO_train2014_000000000077.jpg,./coco-2014/train/data/COCO_train2014_000000000077.jpg,375,500,77,a young man riding a skateboard into the air
+COCO_train2014_000000000077.jpg,./coco-2014/train/data/COCO_train2014_000000000077.jpg,375,500,77,some male skateboarders are doing some tricks and grafitti
+COCO_train2014_000000000078.jpg,./coco-2014/train/data/COCO_train2014_000000000078.jpg,612,612,78,a lighted owl candle sits next to a clock
+COCO_train2014_000000000078.jpg,./coco-2014/train/data/COCO_train2014_000000000078.jpg,612,612,78,white clock sitting next to a statue of an owl 
+COCO_train2014_000000000078.jpg,./coco-2014/train/data/COCO_train2014_000000000078.jpg,612,612,78,a close up of a clock near an owl candle holder 
+COCO_train2014_000000000078.jpg,./coco-2014/train/data/COCO_train2014_000000000078.jpg,612,612,78,an antique looking clock beside an owl with a candle in it
+COCO_train2014_000000000078.jpg,./coco-2014/train/data/COCO_train2014_000000000078.jpg,612,612,78,an owl candle and a clock sitting in front of a wall
+COCO_train2014_000000000081.jpg,./coco-2014/train/data/COCO_train2014_000000000081.jpg,425,640,81,a big plane with airfrance on the side of it
+COCO_train2014_000000000081.jpg,./coco-2014/train/data/COCO_train2014_000000000081.jpg,425,640,81,an airfrance jet airplane flying in the sky 
+COCO_train2014_000000000081.jpg,./coco-2014/train/data/COCO_train2014_000000000081.jpg,425,640,81,large two decked four engined airliner in flight
+COCO_train2014_000000000081.jpg,./coco-2014/train/data/COCO_train2014_000000000081.jpg,425,640,81,a big airplane flying in the big blue sky
+COCO_train2014_000000000081.jpg,./coco-2014/train/data/COCO_train2014_000000000081.jpg,425,640,81,an air france air plane in mid flight
+COCO_train2014_000000000086.jpg,./coco-2014/train/data/COCO_train2014_000000000086.jpg,640,512,86,a young person is on a very ornate old bicycle
+COCO_train2014_000000000086.jpg,./coco-2014/train/data/COCO_train2014_000000000086.jpg,640,512,86,a man on a an old fashioned bicycle in the woods 
+COCO_train2014_000000000086.jpg,./coco-2014/train/data/COCO_train2014_000000000086.jpg,640,512,86,a person looks down at something while sitting on a bike 
+COCO_train2014_000000000086.jpg,./coco-2014/train/data/COCO_train2014_000000000086.jpg,640,512,86,a man sitting on a motorcycle in the woods
+COCO_train2014_000000000086.jpg,./coco-2014/train/data/COCO_train2014_000000000086.jpg,640,512,86,a man riding a motor bike across a forest
+COCO_train2014_000000000089.jpg,./coco-2014/train/data/COCO_train2014_000000000089.jpg,480,640,89,an oven with a stove on top of it in a kitchen
+COCO_train2014_000000000089.jpg,./coco-2014/train/data/COCO_train2014_000000000089.jpg,480,640,89,a stove with a lighted hood in the kitchen
+COCO_train2014_000000000089.jpg,./coco-2014/train/data/COCO_train2014_000000000089.jpg,480,640,89,a small light is on above the polished stove top
+COCO_train2014_000000000089.jpg,./coco-2014/train/data/COCO_train2014_000000000089.jpg,480,640,89,smooth top stove with exhaust fan that has light turned on
+COCO_train2014_000000000089.jpg,./coco-2014/train/data/COCO_train2014_000000000089.jpg,480,640,89,a stove top is cleaned with a set of knives on the wall
+COCO_train2014_000000000092.jpg,./coco-2014/train/data/COCO_train2014_000000000092.jpg,427,640,92,a piece of chocolate cake on top of a white plate
+COCO_train2014_000000000092.jpg,./coco-2014/train/data/COCO_train2014_000000000092.jpg,427,640,92,a piece of chocolate dessert on a plate with a napkin and a fork
+COCO_train2014_000000000092.jpg,./coco-2014/train/data/COCO_train2014_000000000092.jpg,427,640,92,a chocolate desert on a plate with a fork 
+COCO_train2014_000000000092.jpg,./coco-2014/train/data/COCO_train2014_000000000092.jpg,427,640,92,a chocolate cake and a fork ready to be eat
+COCO_train2014_000000000092.jpg,./coco-2014/train/data/COCO_train2014_000000000092.jpg,427,640,92,a white plate with a brownie and white frosting
+COCO_train2014_000000000094.jpg,./coco-2014/train/data/COCO_train2014_000000000094.jpg,427,640,94,this is a view of a quaint city street
+COCO_train2014_000000000094.jpg,./coco-2014/train/data/COCO_train2014_000000000094.jpg,427,640,94,a street sign and a car on the road
+COCO_train2014_000000000094.jpg,./coco-2014/train/data/COCO_train2014_000000000094.jpg,427,640,94,there is a car driving down a street with buildings on each side
+COCO_train2014_000000000094.jpg,./coco-2014/train/data/COCO_train2014_000000000094.jpg,427,640,94,there is a street lined with packed buildings
+COCO_train2014_000000000094.jpg,./coco-2014/train/data/COCO_train2014_000000000094.jpg,427,640,94,a city street with a sign that reads peace way hotel
+COCO_train2014_000000000109.jpg,./coco-2014/train/data/COCO_train2014_000000000109.jpg,416,640,109,some grass and a person in a blue shirt walking a dog and water
+COCO_train2014_000000000109.jpg,./coco-2014/train/data/COCO_train2014_000000000109.jpg,416,640,109,a wide walkway allows for walks along the river
+COCO_train2014_000000000109.jpg,./coco-2014/train/data/COCO_train2014_000000000109.jpg,416,640,109,sky view of a walkway along the shore of a river
+COCO_train2014_000000000109.jpg,./coco-2014/train/data/COCO_train2014_000000000109.jpg,416,640,109,a skate park next to a body of water and green park
+COCO_train2014_000000000109.jpg,./coco-2014/train/data/COCO_train2014_000000000109.jpg,416,640,109,a waterfront walkway and garden area next to a river
+COCO_train2014_000000000110.jpg,./coco-2014/train/data/COCO_train2014_000000000110.jpg,480,640,110,a woman and child sitting at a table with a pizza in front of them
+COCO_train2014_000000000110.jpg,./coco-2014/train/data/COCO_train2014_000000000110.jpg,480,640,110,a lady and a child are sittingthe lady is cutting pizza pieces
+COCO_train2014_000000000110.jpg,./coco-2014/train/data/COCO_train2014_000000000110.jpg,480,640,110,a woman cutting a pizza with a fork and knife
+COCO_train2014_000000000110.jpg,./coco-2014/train/data/COCO_train2014_000000000110.jpg,480,640,110,a woman cutting a pizza with a fork and knife 
+COCO_train2014_000000000110.jpg,./coco-2014/train/data/COCO_train2014_000000000110.jpg,480,640,110,woman cutting pizza with fork and knife sitting next to young girl
+COCO_train2014_000000000113.jpg,./coco-2014/train/data/COCO_train2014_000000000113.jpg,640,416,113,a woman cutting into a cake with a man standing behind her
+COCO_train2014_000000000113.jpg,./coco-2014/train/data/COCO_train2014_000000000113.jpg,640,416,113,two people standing near a table with a cake 
+COCO_train2014_000000000113.jpg,./coco-2014/train/data/COCO_train2014_000000000113.jpg,640,416,113,a man and woman cut into a big cake 
+COCO_train2014_000000000113.jpg,./coco-2014/train/data/COCO_train2014_000000000113.jpg,640,416,113,a man and woman standing in front of a cake
+COCO_train2014_000000000113.jpg,./coco-2014/train/data/COCO_train2014_000000000113.jpg,640,416,113,a women who is cutting into a cake
+COCO_train2014_000000000127.jpg,./coco-2014/train/data/COCO_train2014_000000000127.jpg,481,640,127,a close up of a slice of cake on a plate
+COCO_train2014_000000000127.jpg,./coco-2014/train/data/COCO_train2014_000000000127.jpg,481,640,127,a slice of cake and mug sitting on a wooden table outside
+COCO_train2014_000000000127.jpg,./coco-2014/train/data/COCO_train2014_000000000127.jpg,481,640,127,a dessert and a cup of coffee sit next to a book and a purse
+COCO_train2014_000000000127.jpg,./coco-2014/train/data/COCO_train2014_000000000127.jpg,481,640,127,slice of cake next to large filled cup on wooden table
+COCO_train2014_000000000127.jpg,./coco-2014/train/data/COCO_train2014_000000000127.jpg,481,640,127,a piece of cake and coffee are on an outdoor table
+COCO_train2014_000000000138.jpg,./coco-2014/train/data/COCO_train2014_000000000138.jpg,573,640,138,picture of a kitchen this has smaller photos of item within that kitchen 
+COCO_train2014_000000000138.jpg,./coco-2014/train/data/COCO_train2014_000000000138.jpg,573,640,138,the kitchen has odd looking colors in it
+COCO_train2014_000000000138.jpg,./coco-2014/train/data/COCO_train2014_000000000138.jpg,573,640,138,collage of pictures from a clean rustic kitchen 
+COCO_train2014_000000000138.jpg,./coco-2014/train/data/COCO_train2014_000000000138.jpg,573,640,138,a series of photographs of a tiny model kitchen
+COCO_train2014_000000000138.jpg,./coco-2014/train/data/COCO_train2014_000000000138.jpg,573,640,138,three dimensional rendering of a kitchen area with various appliances 
+COCO_train2014_000000000142.jpg,./coco-2014/train/data/COCO_train2014_000000000142.jpg,640,480,142,plate with a piece of bread dark chocolate spread bananas and a carton of silk
+COCO_train2014_000000000142.jpg,./coco-2014/train/data/COCO_train2014_000000000142.jpg,640,480,142,there is a plate of banana and chocolate on bread
+COCO_train2014_000000000142.jpg,./coco-2014/train/data/COCO_train2014_000000000142.jpg,640,480,142,a close up of a plate of a jelly and banana sandwich
+COCO_train2014_000000000142.jpg,./coco-2014/train/data/COCO_train2014_000000000142.jpg,640,480,142,bread with banana milk and nutella on a table
+COCO_train2014_000000000142.jpg,./coco-2014/train/data/COCO_train2014_000000000142.jpg,640,480,142,a sliced banana topped dessert sits on a plate
+COCO_train2014_000000000144.jpg,./coco-2014/train/data/COCO_train2014_000000000144.jpg,480,640,144,a number of giraffes near one another 
+COCO_train2014_000000000144.jpg,./coco-2014/train/data/COCO_train2014_000000000144.jpg,480,640,144,two giraffes eating together out of a trough in a fenced area
+COCO_train2014_000000000144.jpg,./coco-2014/train/data/COCO_train2014_000000000144.jpg,480,640,144,a couple of giraffes eat some food out of a trey 
+COCO_train2014_000000000144.jpg,./coco-2014/train/data/COCO_train2014_000000000144.jpg,480,640,144,three giraffes standing in the dirt in a fenced in area
+COCO_train2014_000000000144.jpg,./coco-2014/train/data/COCO_train2014_000000000144.jpg,480,640,144,three giraffes stuck behind the confines of a zoo fence 
+COCO_train2014_000000000149.jpg,./coco-2014/train/data/COCO_train2014_000000000149.jpg,428,640,149,a bunch of people are at a grass field 
+COCO_train2014_000000000149.jpg,./coco-2014/train/data/COCO_train2014_000000000149.jpg,428,640,149,people are flying kites on a high school field
+COCO_train2014_000000000149.jpg,./coco-2014/train/data/COCO_train2014_000000000149.jpg,428,640,149,people gathered outside in a big field on a cloudy day
+COCO_train2014_000000000149.jpg,./coco-2014/train/data/COCO_train2014_000000000149.jpg,428,640,149,people flying kites in a field on a cloudy day
+COCO_train2014_000000000149.jpg,./coco-2014/train/data/COCO_train2014_000000000149.jpg,428,640,149,a host of kites being flown on a field by people
+COCO_train2014_000000000151.jpg,./coco-2014/train/data/COCO_train2014_000000000151.jpg,640,480,151,a man leans out of a vehicle near a short stop sign in a forest
+COCO_train2014_000000000151.jpg,./coco-2014/train/data/COCO_train2014_000000000151.jpg,640,480,151,a stop sign sitting near some tall trees
+COCO_train2014_000000000151.jpg,./coco-2014/train/data/COCO_train2014_000000000151.jpg,640,480,151,a stop sign sits in the middle of the forest 
+COCO_train2014_000000000151.jpg,./coco-2014/train/data/COCO_train2014_000000000151.jpg,640,480,151,a stop sign directs pedestrians as a train travels by
+COCO_train2014_000000000151.jpg,./coco-2014/train/data/COCO_train2014_000000000151.jpg,640,480,151,a stop sign is shown close to the ground
+COCO_train2014_000000000154.jpg,./coco-2014/train/data/COCO_train2014_000000000154.jpg,640,427,154,three zebras grazing in green grass field area
+COCO_train2014_000000000154.jpg,./coco-2014/train/data/COCO_train2014_000000000154.jpg,640,427,154,three zebras standing on a grassy dirt field
+COCO_train2014_000000000154.jpg,./coco-2014/train/data/COCO_train2014_000000000154.jpg,640,427,154,three zebra are walking through the grass of a field
+COCO_train2014_000000000154.jpg,./coco-2014/train/data/COCO_train2014_000000000154.jpg,640,427,154,three zebras are standing in an open field
+COCO_train2014_000000000154.jpg,./coco-2014/train/data/COCO_train2014_000000000154.jpg,640,427,154,three zeebras standing in a grassy field walking
+COCO_train2014_000000000165.jpg,./coco-2014/train/data/COCO_train2014_000000000165.jpg,536,640,165,a female in military uniform cutting a businessmans neck tie
+COCO_train2014_000000000165.jpg,./coco-2014/train/data/COCO_train2014_000000000165.jpg,536,640,165,a man in a suit and a woman in military clothes
+COCO_train2014_000000000165.jpg,./coco-2014/train/data/COCO_train2014_000000000165.jpg,536,640,165,a woman soldier holding up a pair of giant scissors to someones tie
+COCO_train2014_000000000165.jpg,./coco-2014/train/data/COCO_train2014_000000000165.jpg,536,640,165,a funny picture of a woman holding a large pair of scissors attempting to cut a mans tie
+COCO_train2014_000000000165.jpg,./coco-2014/train/data/COCO_train2014_000000000165.jpg,536,640,165,a woman in a soldiers uniform pretends to cut the tie of a man using an enormous pair of scissors
+COCO_train2014_000000000194.jpg,./coco-2014/train/data/COCO_train2014_000000000194.jpg,480,640,194,an exotic pizza sits on a plate with cheese and bits of meat on top
+COCO_train2014_000000000194.jpg,./coco-2014/train/data/COCO_train2014_000000000194.jpg,480,640,194,a small pizza that is on a white plate
+COCO_train2014_000000000194.jpg,./coco-2014/train/data/COCO_train2014_000000000194.jpg,480,640,194,a small personal sized pizza is shown on display
+COCO_train2014_000000000194.jpg,./coco-2014/train/data/COCO_train2014_000000000194.jpg,480,640,194,the pizza is loaded with lots of toppings
+COCO_train2014_000000000194.jpg,./coco-2014/train/data/COCO_train2014_000000000194.jpg,480,640,194,small pizza sitting on a white plate with different toppings on it 
+COCO_train2014_000000000201.jpg,./coco-2014/train/data/COCO_train2014_000000000201.jpg,428,640,201,there are skateboards leaning on a metal bar
+COCO_train2014_000000000201.jpg,./coco-2014/train/data/COCO_train2014_000000000201.jpg,428,640,201,a row of snow boards sticking out of the snow
+COCO_train2014_000000000201.jpg,./coco-2014/train/data/COCO_train2014_000000000201.jpg,428,640,201,snowboards sticking in the snow by a rack 
+COCO_train2014_000000000201.jpg,./coco-2014/train/data/COCO_train2014_000000000201.jpg,428,640,201,six snowboards are propped in the snow on a rail
+COCO_train2014_000000000201.jpg,./coco-2014/train/data/COCO_train2014_000000000201.jpg,428,640,201,five skateboards on a rack in a snow covered mountain 
+COCO_train2014_000000000247.jpg,./coco-2014/train/data/COCO_train2014_000000000247.jpg,424,640,247,a plane sits on a runway waiting for lift off
+COCO_train2014_000000000247.jpg,./coco-2014/train/data/COCO_train2014_000000000247.jpg,424,640,247,a small engine plane sitting on an air field being displayed
+COCO_train2014_000000000247.jpg,./coco-2014/train/data/COCO_train2014_000000000247.jpg,424,640,247,a red white and blue helicopter has a tag on one blade
+COCO_train2014_000000000247.jpg,./coco-2014/train/data/COCO_train2014_000000000247.jpg,424,640,247,a small plane with a certificate on the propellers
+COCO_train2014_000000000247.jpg,./coco-2014/train/data/COCO_train2014_000000000247.jpg,424,640,247,a small airplane that is on a runway
+COCO_train2014_000000000250.jpg,./coco-2014/train/data/COCO_train2014_000000000250.jpg,480,640,250,a greenwich street and vesey street sign are hanging on a pole
+COCO_train2014_000000000250.jpg,./coco-2014/train/data/COCO_train2014_000000000250.jpg,480,640,250,a street sign on a pole on a street
+COCO_train2014_000000000250.jpg,./coco-2014/train/data/COCO_train2014_000000000250.jpg,480,640,250,two green and white street signs with building in background
+COCO_train2014_000000000250.jpg,./coco-2014/train/data/COCO_train2014_000000000250.jpg,480,640,250,a city street has an intersection sign on a pole
+COCO_train2014_000000000250.jpg,./coco-2014/train/data/COCO_train2014_000000000250.jpg,480,640,250,street signs near tall buildings on the corner of greenwich st and vesey st
+COCO_train2014_000000000260.jpg,./coco-2014/train/data/COCO_train2014_000000000260.jpg,333,500,260,a woman next to a cart of luggage at a bus stop
+COCO_train2014_000000000260.jpg,./coco-2014/train/data/COCO_train2014_000000000260.jpg,333,500,260,a woman is waiting with a cart full of luggage
+COCO_train2014_000000000260.jpg,./coco-2014/train/data/COCO_train2014_000000000260.jpg,333,500,260,the woman is standing with her luggage 
+COCO_train2014_000000000260.jpg,./coco-2014/train/data/COCO_train2014_000000000260.jpg,333,500,260,a woman wearing a yellow shirt standing next to luggage
+COCO_train2014_000000000260.jpg,./coco-2014/train/data/COCO_train2014_000000000260.jpg,333,500,260,a female traveler leaning on a luggage cart
+COCO_train2014_000000000263.jpg,./coco-2014/train/data/COCO_train2014_000000000263.jpg,640,591,263,a couple of elephants standing next to each other
+COCO_train2014_000000000263.jpg,./coco-2014/train/data/COCO_train2014_000000000263.jpg,640,591,263,one adult and one small elephant in a dry lot
+COCO_train2014_000000000263.jpg,./coco-2014/train/data/COCO_train2014_000000000263.jpg,640,591,263,adult elephant pushing a baby elephant with its leg
+COCO_train2014_000000000263.jpg,./coco-2014/train/data/COCO_train2014_000000000263.jpg,640,591,263,a couple of elephants playing with each other in their pen
+COCO_train2014_000000000263.jpg,./coco-2014/train/data/COCO_train2014_000000000263.jpg,640,591,263,a baby elephant tries to get on top of another elephant 
+COCO_train2014_000000000307.jpg,./coco-2014/train/data/COCO_train2014_000000000307.jpg,480,640,307,the dog is playing with his toy in the grass
+COCO_train2014_000000000307.jpg,./coco-2014/train/data/COCO_train2014_000000000307.jpg,480,640,307,a dog that is standing in the grass near a frisbee
+COCO_train2014_000000000307.jpg,./coco-2014/train/data/COCO_train2014_000000000307.jpg,480,640,307,a collie chasing a frisbee in the grass
+COCO_train2014_000000000307.jpg,./coco-2014/train/data/COCO_train2014_000000000307.jpg,480,640,307,a brown and white dog chasing a blue and yellow frisbee
+COCO_train2014_000000000307.jpg,./coco-2014/train/data/COCO_train2014_000000000307.jpg,480,640,307,a cute dog is in the grass with a frisbee
+COCO_train2014_000000000308.jpg,./coco-2014/train/data/COCO_train2014_000000000308.jpg,426,640,308,a man pouring wine from casks for patrons
+COCO_train2014_000000000308.jpg,./coco-2014/train/data/COCO_train2014_000000000308.jpg,426,640,308,people are gathered around a man tasting wine
+COCO_train2014_000000000308.jpg,./coco-2014/train/data/COCO_train2014_000000000308.jpg,426,640,308,the people are sampling wine at a wine tasting
+COCO_train2014_000000000308.jpg,./coco-2014/train/data/COCO_train2014_000000000308.jpg,426,640,308,group of people tasting wine next to some barrels
+COCO_train2014_000000000308.jpg,./coco-2014/train/data/COCO_train2014_000000000308.jpg,426,640,308,people gather around a table while sampling wine
+COCO_train2014_000000000309.jpg,./coco-2014/train/data/COCO_train2014_000000000309.jpg,600,600,309,a teddy bear lays on the lawn and a dog stands behind it
+COCO_train2014_000000000309.jpg,./coco-2014/train/data/COCO_train2014_000000000309.jpg,600,600,309,a small brown stuffed bear laying in the grass
+COCO_train2014_000000000309.jpg,./coco-2014/train/data/COCO_train2014_000000000309.jpg,600,600,309,a dog stands in the grass next to a stuffed bear
+COCO_train2014_000000000309.jpg,./coco-2014/train/data/COCO_train2014_000000000309.jpg,600,600,309,a stuffed bear that is laying down in the grass
+COCO_train2014_000000000309.jpg,./coco-2014/train/data/COCO_train2014_000000000309.jpg,600,600,309,a teddy bear is laying on the green grass next to a dog 
+COCO_train2014_000000000312.jpg,./coco-2014/train/data/COCO_train2014_000000000312.jpg,427,640,312,a herd of elephants one running with a baby
+COCO_train2014_000000000312.jpg,./coco-2014/train/data/COCO_train2014_000000000312.jpg,427,640,312,a baby elephant walks through the forest with five adult elephants
+COCO_train2014_000000000312.jpg,./coco-2014/train/data/COCO_train2014_000000000312.jpg,427,640,312,a large group of elephants crossing a dirt path
+COCO_train2014_000000000312.jpg,./coco-2014/train/data/COCO_train2014_000000000312.jpg,427,640,312,four large elephants are watching over their baby in the wilderness
+COCO_train2014_000000000312.jpg,./coco-2014/train/data/COCO_train2014_000000000312.jpg,427,640,312,a herd of elephants including a tiny baby elephant cross a dirt road
+COCO_train2014_000000000315.jpg,./coco-2014/train/data/COCO_train2014_000000000315.jpg,427,640,315,beautiful women wearing bikinis frolicking on a sandy beach
+COCO_train2014_000000000315.jpg,./coco-2014/train/data/COCO_train2014_000000000315.jpg,427,640,315,people sunbathing and sitting under umbrellas at a city beach
+COCO_train2014_000000000315.jpg,./coco-2014/train/data/COCO_train2014_000000000315.jpg,427,640,315,groups of people sit on a beach in the sand
+COCO_train2014_000000000315.jpg,./coco-2014/train/data/COCO_train2014_000000000315.jpg,427,640,315,people in bikinis at a beach under umbrellas
+COCO_train2014_000000000315.jpg,./coco-2014/train/data/COCO_train2014_000000000315.jpg,427,640,315,women are walking towards seats on the beach
+COCO_train2014_000000000321.jpg,./coco-2014/train/data/COCO_train2014_000000000321.jpg,480,640,321,two plastic containers holding onto a sandwich and hot dogs 
+COCO_train2014_000000000321.jpg,./coco-2014/train/data/COCO_train2014_000000000321.jpg,480,640,321,a sub sandwich in a box next to two hot dogs
+COCO_train2014_000000000321.jpg,./coco-2014/train/data/COCO_train2014_000000000321.jpg,480,640,321,two styrofoam carryout containers one with a steak sub with jalapeno peppers and the other with two hot dogs
+COCO_train2014_000000000321.jpg,./coco-2014/train/data/COCO_train2014_000000000321.jpg,480,640,321,the takeout containers hold two hot dogs with condiments and a steak sandwich
+COCO_train2014_000000000321.jpg,./coco-2014/train/data/COCO_train2014_000000000321.jpg,480,640,321,a close up of a plastic container with hot dogs
+COCO_train2014_000000000322.jpg,./coco-2014/train/data/COCO_train2014_000000000322.jpg,481,640,322,a full view of a man throwing a frisbee
+COCO_train2014_000000000322.jpg,./coco-2014/train/data/COCO_train2014_000000000322.jpg,481,640,322,a person is throwing a frisbee at night 
+COCO_train2014_000000000322.jpg,./coco-2014/train/data/COCO_train2014_000000000322.jpg,481,640,322,a man standing in a yard with a red frisbee
+COCO_train2014_000000000322.jpg,./coco-2014/train/data/COCO_train2014_000000000322.jpg,481,640,322,man playing with flying red disk outdoors in evening
+COCO_train2014_000000000322.jpg,./coco-2014/train/data/COCO_train2014_000000000322.jpg,481,640,322,a man tossing an orange frisbee on top of a lush green field
+COCO_train2014_000000000326.jpg,./coco-2014/train/data/COCO_train2014_000000000326.jpg,427,640,326,a man holding a glass of wine on its side
+COCO_train2014_000000000326.jpg,./coco-2014/train/data/COCO_train2014_000000000326.jpg,427,640,326,a man tilting a glass of wineto the side
+COCO_train2014_000000000326.jpg,./coco-2014/train/data/COCO_train2014_000000000326.jpg,427,640,326,a man tips a clear wine glass to observe its makeup 
+COCO_train2014_000000000326.jpg,./coco-2014/train/data/COCO_train2014_000000000326.jpg,427,640,326,a male in a white shirt is holding a glass of wine
+COCO_train2014_000000000326.jpg,./coco-2014/train/data/COCO_train2014_000000000326.jpg,427,640,326,a person holding a partially filled wine glass
+COCO_train2014_000000000332.jpg,./coco-2014/train/data/COCO_train2014_000000000332.jpg,480,640,332,asian noodles cut up egg roll with greens and carrots in a white bowl
+COCO_train2014_000000000332.jpg,./coco-2014/train/data/COCO_train2014_000000000332.jpg,480,640,332,healthy foods being used to create a dinner dish
+COCO_train2014_000000000332.jpg,./coco-2014/train/data/COCO_train2014_000000000332.jpg,480,640,332,a plate of food meat noodles sprouts carrots and salad
+COCO_train2014_000000000332.jpg,./coco-2014/train/data/COCO_train2014_000000000332.jpg,480,640,332,food in a bowl with carrots and drinks around it
+COCO_train2014_000000000332.jpg,./coco-2014/train/data/COCO_train2014_000000000332.jpg,480,640,332,a bowl of pasta carrots egg roll and cabbage
+COCO_train2014_000000000349.jpg,./coco-2014/train/data/COCO_train2014_000000000349.jpg,480,640,349,a trailer is sitting under a bridge and some power lines
+COCO_train2014_000000000349.jpg,./coco-2014/train/data/COCO_train2014_000000000349.jpg,480,640,349,the passenger train has stopped at a station
+COCO_train2014_000000000349.jpg,./coco-2014/train/data/COCO_train2014_000000000349.jpg,480,640,349,an old train drives on the tracks under a bridge 
+COCO_train2014_000000000349.jpg,./coco-2014/train/data/COCO_train2014_000000000349.jpg,480,640,349,a lone train sits on the train track under the bridge
+COCO_train2014_000000000349.jpg,./coco-2014/train/data/COCO_train2014_000000000349.jpg,480,640,349,a white and orange train passing by trees and a lamppost
+COCO_train2014_000000000368.jpg,./coco-2014/train/data/COCO_train2014_000000000368.jpg,640,480,368,there are several young boys practicing soccer some with their dads
+COCO_train2014_000000000368.jpg,./coco-2014/train/data/COCO_train2014_000000000368.jpg,640,480,368,a young boy playing soccer on a grassy field
+COCO_train2014_000000000368.jpg,./coco-2014/train/data/COCO_train2014_000000000368.jpg,640,480,368,a group of kids playing soccer on a field
+COCO_train2014_000000000368.jpg,./coco-2014/train/data/COCO_train2014_000000000368.jpg,640,480,368,small child in soccer uniform kicking at yellow ball 
+COCO_train2014_000000000368.jpg,./coco-2014/train/data/COCO_train2014_000000000368.jpg,640,480,368,a young man kicking a soccer ball around a field
+COCO_train2014_000000000370.jpg,./coco-2014/train/data/COCO_train2014_000000000370.jpg,640,480,370,the young child is happily holding a fresh vegetable 
+COCO_train2014_000000000370.jpg,./coco-2014/train/data/COCO_train2014_000000000370.jpg,640,480,370,a little girl holding wet broccoli in her hand 
+COCO_train2014_000000000370.jpg,./coco-2014/train/data/COCO_train2014_000000000370.jpg,640,480,370,a little girl holds a hand full of wet broccoli 
+COCO_train2014_000000000370.jpg,./coco-2014/train/data/COCO_train2014_000000000370.jpg,640,480,370,a little girl holds a piece of broccoli towards the camera
+COCO_train2014_000000000370.jpg,./coco-2014/train/data/COCO_train2014_000000000370.jpg,640,480,370,a small kid holds on to some vegetables 
+COCO_train2014_000000000382.jpg,./coco-2014/train/data/COCO_train2014_000000000382.jpg,480,640,382,a man riding skis down a snow covered slope
+COCO_train2014_000000000382.jpg,./coco-2014/train/data/COCO_train2014_000000000382.jpg,480,640,382,landscape of a snowy mountain with a skiers trail in the snow
+COCO_train2014_000000000382.jpg,./coco-2014/train/data/COCO_train2014_000000000382.jpg,480,640,382,a high mountain of snow with a cross country skier
+COCO_train2014_000000000382.jpg,./coco-2014/train/data/COCO_train2014_000000000382.jpg,480,640,382,a distance shot shows rolling snowy hills partially shadowed with ski prints reaching off into the distance and to the foreground a single skier 
+COCO_train2014_000000000382.jpg,./coco-2014/train/data/COCO_train2014_000000000382.jpg,480,640,382,a mountain slope photo with a person on skis in the foreground
+COCO_train2014_000000000384.jpg,./coco-2014/train/data/COCO_train2014_000000000384.jpg,640,446,384,a living room filled with furniture and windows covered in curtain
+COCO_train2014_000000000384.jpg,./coco-2014/train/data/COCO_train2014_000000000384.jpg,640,446,384,a living room with a couch coffee table and two windows
+COCO_train2014_000000000384.jpg,./coco-2014/train/data/COCO_train2014_000000000384.jpg,640,446,384,a living room with white curtains and a black couch and table
+COCO_train2014_000000000384.jpg,./coco-2014/train/data/COCO_train2014_000000000384.jpg,640,446,384,this is a living room with white curtains
+COCO_train2014_000000000384.jpg,./coco-2014/train/data/COCO_train2014_000000000384.jpg,640,446,384,a living room with a couch coffee table and two large windows with white curtains
+COCO_train2014_000000000389.jpg,./coco-2014/train/data/COCO_train2014_000000000389.jpg,480,640,389,a man with a bushy beard and green tie
+COCO_train2014_000000000389.jpg,./coco-2014/train/data/COCO_train2014_000000000389.jpg,480,640,389,this man is very happy to be at the gathering
+COCO_train2014_000000000389.jpg,./coco-2014/train/data/COCO_train2014_000000000389.jpg,480,640,389,a woman standing in a large group of people near stairs
+COCO_train2014_000000000389.jpg,./coco-2014/train/data/COCO_train2014_000000000389.jpg,480,640,389,the man smiles wearing a green neck tie near a crowd of people 
+COCO_train2014_000000000389.jpg,./coco-2014/train/data/COCO_train2014_000000000389.jpg,480,640,389,a man with a long grey beard in a white shirt and green tie at a pub full of greenshirted patrons
+COCO_train2014_000000000394.jpg,./coco-2014/train/data/COCO_train2014_000000000394.jpg,611,640,394,a white dog holding a purple frisbee in its mouth
+COCO_train2014_000000000394.jpg,./coco-2014/train/data/COCO_train2014_000000000394.jpg,611,640,394,a white dog is holding a frisbee in its mouth waiting to play
+COCO_train2014_000000000394.jpg,./coco-2014/train/data/COCO_train2014_000000000394.jpg,611,640,394,white dog carrying a purple frisbee on a lawn
+COCO_train2014_000000000394.jpg,./coco-2014/train/data/COCO_train2014_000000000394.jpg,611,640,394,a dog is holding a frisbee standing on grass
+COCO_train2014_000000000394.jpg,./coco-2014/train/data/COCO_train2014_000000000394.jpg,611,640,394,a white dog has a purple frisbee in its mouth
+COCO_train2014_000000000404.jpg,./coco-2014/train/data/COCO_train2014_000000000404.jpg,640,426,404,a couple of boats that are in some water
+COCO_train2014_000000000404.jpg,./coco-2014/train/data/COCO_train2014_000000000404.jpg,640,426,404,a pair of boats docked at a pier is shown
+COCO_train2014_000000000404.jpg,./coco-2014/train/data/COCO_train2014_000000000404.jpg,640,426,404,three boats docked in still water with clouds in the sky 
+COCO_train2014_000000000404.jpg,./coco-2014/train/data/COCO_train2014_000000000404.jpg,640,426,404,three boats are docked together on the cloudy day
+COCO_train2014_000000000404.jpg,./coco-2014/train/data/COCO_train2014_000000000404.jpg,640,426,404,some colorful boats sitting next to a dock 
+COCO_train2014_000000000419.jpg,./coco-2014/train/data/COCO_train2014_000000000419.jpg,480,640,419,a tennis player taking  a swing at  a ball
+COCO_train2014_000000000419.jpg,./coco-2014/train/data/COCO_train2014_000000000419.jpg,480,640,419,two people on the tennis court playing tennis
+COCO_train2014_000000000419.jpg,./coco-2014/train/data/COCO_train2014_000000000419.jpg,480,640,419,two people playing tennis on a tennis court
+COCO_train2014_000000000419.jpg,./coco-2014/train/data/COCO_train2014_000000000419.jpg,480,640,419,two people playing tennis in a neighborhood park 
+COCO_train2014_000000000419.jpg,./coco-2014/train/data/COCO_train2014_000000000419.jpg,480,640,419,two people at a public tennis court one serves the ball
+COCO_train2014_000000000431.jpg,./coco-2014/train/data/COCO_train2014_000000000431.jpg,389,640,431,a tennis player in action on the court
+COCO_train2014_000000000431.jpg,./coco-2014/train/data/COCO_train2014_000000000431.jpg,389,640,431,a male in a white shirt is playing tennis
+COCO_train2014_000000000431.jpg,./coco-2014/train/data/COCO_train2014_000000000431.jpg,389,640,431,a man that is playing tennis on a court
+COCO_train2014_000000000431.jpg,./coco-2014/train/data/COCO_train2014_000000000431.jpg,389,640,431,a male tennis player hits the ball on a grass court
+COCO_train2014_000000000431.jpg,./coco-2014/train/data/COCO_train2014_000000000431.jpg,389,640,431,a man in motion hitting a tennis ball with a tennis racket on a tennis court
+COCO_train2014_000000000436.jpg,./coco-2014/train/data/COCO_train2014_000000000436.jpg,640,427,436,there is a person sitting and licking their fingers
+COCO_train2014_000000000436.jpg,./coco-2014/train/data/COCO_train2014_000000000436.jpg,640,427,436,a man is eating a roll and licking his thumb
+COCO_train2014_000000000436.jpg,./coco-2014/train/data/COCO_train2014_000000000436.jpg,640,427,436,man wearing glasses eating a slice of food
+COCO_train2014_000000000436.jpg,./coco-2014/train/data/COCO_train2014_000000000436.jpg,640,427,436,a person licks his thumb while holding a piece of food
+COCO_train2014_000000000436.jpg,./coco-2014/train/data/COCO_train2014_000000000436.jpg,640,427,436,a man licking his thumb with a peanut buttered bread slice in his hand
+COCO_train2014_000000000438.jpg,./coco-2014/train/data/COCO_train2014_000000000438.jpg,480,640,438,various pastries are displayed in a take out box
+COCO_train2014_000000000438.jpg,./coco-2014/train/data/COCO_train2014_000000000438.jpg,480,640,438,a box full of donuts in different shapes and flavors
+COCO_train2014_000000000438.jpg,./coco-2014/train/data/COCO_train2014_000000000438.jpg,480,640,438,a box of chocolate filled sour cream donuts
+COCO_train2014_000000000438.jpg,./coco-2014/train/data/COCO_train2014_000000000438.jpg,480,640,438,a big box of various types of doughnuts
+COCO_train2014_000000000438.jpg,./coco-2014/train/data/COCO_train2014_000000000438.jpg,480,640,438,a variety of donuts and pastries in a box
+COCO_train2014_000000000443.jpg,./coco-2014/train/data/COCO_train2014_000000000443.jpg,480,640,443,a cat laying on a persons lap who is sitting on a couch
+COCO_train2014_000000000443.jpg,./coco-2014/train/data/COCO_train2014_000000000443.jpg,480,640,443,a person sitting on a couch with a cat laying on its back
+COCO_train2014_000000000443.jpg,./coco-2014/train/data/COCO_train2014_000000000443.jpg,480,640,443,a cat is lying on its back in a mans lap
+COCO_train2014_000000000443.jpg,./coco-2014/train/data/COCO_train2014_000000000443.jpg,480,640,443,a cat sits with his belly up in a persons lap
+COCO_train2014_000000000443.jpg,./coco-2014/train/data/COCO_train2014_000000000443.jpg,480,640,443,a cat lays on its back while sitting in someones lap
+COCO_train2014_000000000446.jpg,./coco-2014/train/data/COCO_train2014_000000000446.jpg,640,480,446,a woman stands with a wii remote in her hand
+COCO_train2014_000000000446.jpg,./coco-2014/train/data/COCO_train2014_000000000446.jpg,640,480,446,a woman holding a remote control in her right hand
+COCO_train2014_000000000446.jpg,./coco-2014/train/data/COCO_train2014_000000000446.jpg,640,480,446,a woman playing a video game indoors 
+COCO_train2014_000000000446.jpg,./coco-2014/train/data/COCO_train2014_000000000446.jpg,640,480,446,a woman standing in a room holding a remote control
+COCO_train2014_000000000446.jpg,./coco-2014/train/data/COCO_train2014_000000000446.jpg,640,480,446,a standing woman with a remote control in hand 
+COCO_train2014_000000000450.jpg,./coco-2014/train/data/COCO_train2014_000000000450.jpg,480,640,450,a pizza sitting on a white plate next to a glass of water
+COCO_train2014_000000000450.jpg,./coco-2014/train/data/COCO_train2014_000000000450.jpg,480,640,450,a small pizza with sits on a white plate
+COCO_train2014_000000000450.jpg,./coco-2014/train/data/COCO_train2014_000000000450.jpg,480,640,450,a pizza with basil leaves served on a plate
+COCO_train2014_000000000450.jpg,./coco-2014/train/data/COCO_train2014_000000000450.jpg,480,640,450,a fresh cheese and basil pizza on a white plate
+COCO_train2014_000000000450.jpg,./coco-2014/train/data/COCO_train2014_000000000450.jpg,480,640,450,a margherita pizza being served on a plate
+COCO_train2014_000000000471.jpg,./coco-2014/train/data/COCO_train2014_000000000471.jpg,427,640,471,a yellow bus is shown parked in a parking lot
+COCO_train2014_000000000471.jpg,./coco-2014/train/data/COCO_train2014_000000000471.jpg,427,640,471,a yellow bus without passengers standing on the road
+COCO_train2014_000000000471.jpg,./coco-2014/train/data/COCO_train2014_000000000471.jpg,427,640,471,an old yellow school bus is parked in a lot
+COCO_train2014_000000000471.jpg,./coco-2014/train/data/COCO_train2014_000000000471.jpg,427,640,471,a yellow school bus parked in a parking lot
+COCO_train2014_000000000471.jpg,./coco-2014/train/data/COCO_train2014_000000000471.jpg,427,640,471,a los angeles school bus parked in a parking lot
+COCO_train2014_000000000490.jpg,./coco-2014/train/data/COCO_train2014_000000000490.jpg,495,500,490,a dog is looking at someone in the room
+COCO_train2014_000000000490.jpg,./coco-2014/train/data/COCO_train2014_000000000490.jpg,495,500,490,a dog stands next to a skateboard leaned up against a wall
+COCO_train2014_000000000490.jpg,./coco-2014/train/data/COCO_train2014_000000000490.jpg,495,500,490,a dog standing on hard wood floors and next to a wall with his shadow
+COCO_train2014_000000000490.jpg,./coco-2014/train/data/COCO_train2014_000000000490.jpg,495,500,490,dog and skateboard in a room and shadow of dog and person on a wall
+COCO_train2014_000000000490.jpg,./coco-2014/train/data/COCO_train2014_000000000490.jpg,495,500,490,a dog standing next to a skateboard on a wall
+COCO_train2014_000000000491.jpg,./coco-2014/train/data/COCO_train2014_000000000491.jpg,313,500,491,a white stuffed bear is in a room
+COCO_train2014_000000000491.jpg,./coco-2014/train/data/COCO_train2014_000000000491.jpg,313,500,491,a number of stuffed toy dogs set together
+COCO_train2014_000000000491.jpg,./coco-2014/train/data/COCO_train2014_000000000491.jpg,313,500,491,stuffed animals are hanging on poles in the air
+COCO_train2014_000000000491.jpg,./coco-2014/train/data/COCO_train2014_000000000491.jpg,313,500,491,toy pomeranian dog on bag for playing with and enjoyment
+COCO_train2014_000000000491.jpg,./coco-2014/train/data/COCO_train2014_000000000491.jpg,313,500,491,this  bear is a soft furry prize children want to win a the summer carnival
+COCO_train2014_000000000508.jpg,./coco-2014/train/data/COCO_train2014_000000000508.jpg,480,640,508,snow that is on a hill overlooking mountains
+COCO_train2014_000000000508.jpg,./coco-2014/train/data/COCO_train2014_000000000508.jpg,480,640,508,a scenic view of a snow covered mountain and clouds
+COCO_train2014_000000000508.jpg,./coco-2014/train/data/COCO_train2014_000000000508.jpg,480,640,508,sun peeks through the cloudy on top of a snowy mountain
+COCO_train2014_000000000508.jpg,./coco-2014/train/data/COCO_train2014_000000000508.jpg,480,640,508,a field covered in snow on top of a hillside
+COCO_train2014_000000000508.jpg,./coco-2014/train/data/COCO_train2014_000000000508.jpg,480,640,508,a sign stands on a snowy kill under a cloudy sky
+COCO_train2014_000000000510.jpg,./coco-2014/train/data/COCO_train2014_000000000510.jpg,480,640,510,a man holding his hands together while sitting on a bench
+COCO_train2014_000000000510.jpg,./coco-2014/train/data/COCO_train2014_000000000510.jpg,480,640,510,a man sits on a bench with a manmade waterfall behind him 
+COCO_train2014_000000000510.jpg,./coco-2014/train/data/COCO_train2014_000000000510.jpg,480,640,510,a man sitting on top of a brown bench in front of a fountain
+COCO_train2014_000000000510.jpg,./coco-2014/train/data/COCO_train2014_000000000510.jpg,480,640,510,an old man sits on a park bench beside a fountain
+COCO_train2014_000000000510.jpg,./coco-2014/train/data/COCO_train2014_000000000510.jpg,480,640,510,older man sitting on bench in front of water fountain
+COCO_train2014_000000000514.jpg,./coco-2014/train/data/COCO_train2014_000000000514.jpg,640,360,514,a very big and fancy looking room with a big pretty bed
+COCO_train2014_000000000514.jpg,./coco-2014/train/data/COCO_train2014_000000000514.jpg,640,360,514,a bed room that is filled with ancient cloth like sheets 
+COCO_train2014_000000000514.jpg,./coco-2014/train/data/COCO_train2014_000000000514.jpg,640,360,514,a bed is covered by a gold decorative cover 
+COCO_train2014_000000000514.jpg,./coco-2014/train/data/COCO_train2014_000000000514.jpg,640,360,514,old style bed has a cross on the headboard
+COCO_train2014_000000000514.jpg,./coco-2014/train/data/COCO_train2014_000000000514.jpg,640,360,514,this is bed in someones bedroom in their house 
+COCO_train2014_000000000529.jpg,./coco-2014/train/data/COCO_train2014_000000000529.jpg,640,427,529,a guy and a girl hugging on a dirt bike 
+COCO_train2014_000000000529.jpg,./coco-2014/train/data/COCO_train2014_000000000529.jpg,640,427,529,a motorcyclist and a woman posing on a bike for a photo
+COCO_train2014_000000000529.jpg,./coco-2014/train/data/COCO_train2014_000000000529.jpg,640,427,529,a man riding a motorcycle with a beautiful woman on his lap
+COCO_train2014_000000000529.jpg,./coco-2014/train/data/COCO_train2014_000000000529.jpg,640,427,529,a rider sits on a dirt bike with a woman in his lap
+COCO_train2014_000000000529.jpg,./coco-2014/train/data/COCO_train2014_000000000529.jpg,640,427,529,man on dirt bike with a redheaded woman in his lap
+COCO_train2014_000000000531.jpg,./coco-2014/train/data/COCO_train2014_000000000531.jpg,480,640,531,people playing tennis on the court on a sunny day
+COCO_train2014_000000000531.jpg,./coco-2014/train/data/COCO_train2014_000000000531.jpg,480,640,531,wide shot o group playing tennis on a court
+COCO_train2014_000000000531.jpg,./coco-2014/train/data/COCO_train2014_000000000531.jpg,480,640,531,a group of people playing doubles tennis outdoors
+COCO_train2014_000000000531.jpg,./coco-2014/train/data/COCO_train2014_000000000531.jpg,480,640,531,a group of people on a tennis court playing tennis 
+COCO_train2014_000000000531.jpg,./coco-2014/train/data/COCO_train2014_000000000531.jpg,480,640,531,two tennis courts both have doubles games playing on them
+COCO_train2014_000000000532.jpg,./coco-2014/train/data/COCO_train2014_000000000532.jpg,480,640,532,man standing outside a red and black school bus
+COCO_train2014_000000000532.jpg,./coco-2014/train/data/COCO_train2014_000000000532.jpg,480,640,532,a man standing next to a large red bus
+COCO_train2014_000000000532.jpg,./coco-2014/train/data/COCO_train2014_000000000532.jpg,480,640,532,two people standing outside of a remodeled school bus
+COCO_train2014_000000000532.jpg,./coco-2014/train/data/COCO_train2014_000000000532.jpg,480,640,532,a man stands next to a red bus on the street
+COCO_train2014_000000000532.jpg,./coco-2014/train/data/COCO_train2014_000000000532.jpg,480,640,532, a man and two women disembark from two colorful busses
+COCO_train2014_000000000540.jpg,./coco-2014/train/data/COCO_train2014_000000000540.jpg,425,640,540,an airplane sitting in the middle of a city 
+COCO_train2014_000000000540.jpg,./coco-2014/train/data/COCO_train2014_000000000540.jpg,425,640,540,very large jal jet taxiing on the runway at airport in urban environment
+COCO_train2014_000000000540.jpg,./coco-2014/train/data/COCO_train2014_000000000540.jpg,425,640,540,a large jetliner taking off from an airport runway
+COCO_train2014_000000000540.jpg,./coco-2014/train/data/COCO_train2014_000000000540.jpg,425,640,540,an airplane on a bridge over a highway
+COCO_train2014_000000000540.jpg,./coco-2014/train/data/COCO_train2014_000000000540.jpg,425,640,540,a jal airplane taxiing down a runway in a city
+COCO_train2014_000000000542.jpg,./coco-2014/train/data/COCO_train2014_000000000542.jpg,484,640,542,men are standing in front of a prop plane and one man is actually standing in the drivers area and holding on to the top wing
+COCO_train2014_000000000542.jpg,./coco-2014/train/data/COCO_train2014_000000000542.jpg,484,640,542,a group of people standing around an airplane
+COCO_train2014_000000000542.jpg,./coco-2014/train/data/COCO_train2014_000000000542.jpg,484,640,542,large group of people standing next to very old style air plane
+COCO_train2014_000000000542.jpg,./coco-2014/train/data/COCO_train2014_000000000542.jpg,484,640,542,several people standing around and looking at a vintage plane
+COCO_train2014_000000000542.jpg,./coco-2014/train/data/COCO_train2014_000000000542.jpg,484,640,542,people gather around as a man gets into an oldtime airplane
+COCO_train2014_000000000560.jpg,./coco-2014/train/data/COCO_train2014_000000000560.jpg,312,460,560,this is a bathroom with a jacuzzi shower sink and toilet
+COCO_train2014_000000000560.jpg,./coco-2014/train/data/COCO_train2014_000000000560.jpg,312,460,560,a bathroom with a tub a toilet and a stand up shower
+COCO_train2014_000000000560.jpg,./coco-2014/train/data/COCO_train2014_000000000560.jpg,312,460,560,a cgi bathroom with a oval tub filled with water
+COCO_train2014_000000000560.jpg,./coco-2014/train/data/COCO_train2014_000000000560.jpg,312,460,560,the sink of a large modern bathroom is full of water
+COCO_train2014_000000000560.jpg,./coco-2014/train/data/COCO_train2014_000000000560.jpg,312,460,560,a computer rendering of a bathroom shows stone walls and a large tub with a window
+COCO_train2014_000000000562.jpg,./coco-2014/train/data/COCO_train2014_000000000562.jpg,640,423,562,a glass of toothbrushes sitting on a counter
+COCO_train2014_000000000562.jpg,./coco-2014/train/data/COCO_train2014_000000000562.jpg,640,423,562,an image of three toothbrushes in side a glass holder
+COCO_train2014_000000000562.jpg,./coco-2014/train/data/COCO_train2014_000000000562.jpg,640,423,562,three toothbrushes sit inside of a glass on the counter
+COCO_train2014_000000000562.jpg,./coco-2014/train/data/COCO_train2014_000000000562.jpg,640,423,562,three colored toothbrushes standing in a glass holder
+COCO_train2014_000000000562.jpg,./coco-2014/train/data/COCO_train2014_000000000562.jpg,640,423,562,three toothbrushes are in a clear glass cup
+COCO_train2014_000000000572.jpg,./coco-2014/train/data/COCO_train2014_000000000572.jpg,640,427,572,a man kneeling down looking at a ladies shoes
+COCO_train2014_000000000572.jpg,./coco-2014/train/data/COCO_train2014_000000000572.jpg,640,427,572,a person standing and a person looking down
+COCO_train2014_000000000572.jpg,./coco-2014/train/data/COCO_train2014_000000000572.jpg,640,427,572,man standing in front of a woman next to a suitcase 
+COCO_train2014_000000000572.jpg,./coco-2014/train/data/COCO_train2014_000000000572.jpg,640,427,572,this is two men standing on some stairs
+COCO_train2014_000000000572.jpg,./coco-2014/train/data/COCO_train2014_000000000572.jpg,640,427,572,a man leaning over as she inspects a womans shoes
+COCO_train2014_000000000575.jpg,./coco-2014/train/data/COCO_train2014_000000000575.jpg,513,640,575,a close up of a cat laying on grass near a shoe
+COCO_train2014_000000000575.jpg,./coco-2014/train/data/COCO_train2014_000000000575.jpg,513,640,575,the cat is laying in the grass next to a shoe 
+COCO_train2014_000000000575.jpg,./coco-2014/train/data/COCO_train2014_000000000575.jpg,513,640,575,a cat playing with a shoe in a grassy field
+COCO_train2014_000000000575.jpg,./coco-2014/train/data/COCO_train2014_000000000575.jpg,513,640,575,a cat is in the grass chewing on a shoestring 
+COCO_train2014_000000000575.jpg,./coco-2014/train/data/COCO_train2014_000000000575.jpg,513,640,575,an image of a cat that is playing with a shoe
+COCO_train2014_000000000581.jpg,./coco-2014/train/data/COCO_train2014_000000000581.jpg,500,473,581,the chihuahua is looking up at the wooden structure rather than at the moose on the ground
+COCO_train2014_000000000581.jpg,./coco-2014/train/data/COCO_train2014_000000000581.jpg,500,473,581,there is a white and beige dog sitting on the floor
+COCO_train2014_000000000581.jpg,./coco-2014/train/data/COCO_train2014_000000000581.jpg,500,473,581,the small dog is looking up at the camera
+COCO_train2014_000000000581.jpg,./coco-2014/train/data/COCO_train2014_000000000581.jpg,500,473,581,a chihuahua dog is standing next to a toy giraffe and looking up 
+COCO_train2014_000000000581.jpg,./coco-2014/train/data/COCO_train2014_000000000581.jpg,500,473,581,a brown and white chihuahua stands over a stuffed giraffe toy and a gray ribbon
+COCO_train2014_000000000584.jpg,./coco-2014/train/data/COCO_train2014_000000000584.jpg,426,640,584,food on a white plate with vegetables and a garnish
+COCO_train2014_000000000584.jpg,./coco-2014/train/data/COCO_train2014_000000000584.jpg,426,640,584,a close up picture of a meal on a white plate
+COCO_train2014_000000000584.jpg,./coco-2014/train/data/COCO_train2014_000000000584.jpg,426,640,584,a plate of yummy food of some kind
+COCO_train2014_000000000584.jpg,./coco-2014/train/data/COCO_train2014_000000000584.jpg,426,640,584,a cooked stir fry dish arranged on a plate
+COCO_train2014_000000000584.jpg,./coco-2014/train/data/COCO_train2014_000000000584.jpg,426,640,584,a picture of a bowl of food that is mostly vegetables
+COCO_train2014_000000000595.jpg,./coco-2014/train/data/COCO_train2014_000000000595.jpg,480,640,595,an old tv monitor sits in the middle of a stream
+COCO_train2014_000000000595.jpg,./coco-2014/train/data/COCO_train2014_000000000595.jpg,480,640,595,there is an old tv in the middle of a swamp
+COCO_train2014_000000000595.jpg,./coco-2014/train/data/COCO_train2014_000000000595.jpg,480,640,595,a television sitting in the middle of a river
+COCO_train2014_000000000595.jpg,./coco-2014/train/data/COCO_train2014_000000000595.jpg,480,640,595,a tv sitting next to a river with a busted screen
+COCO_train2014_000000000595.jpg,./coco-2014/train/data/COCO_train2014_000000000595.jpg,480,640,595,a tv in the middle of a fast flowing river
+COCO_train2014_000000000597.jpg,./coco-2014/train/data/COCO_train2014_000000000597.jpg,248,640,597,a herd of elephants and their calves walking single file
+COCO_train2014_000000000597.jpg,./coco-2014/train/data/COCO_train2014_000000000597.jpg,248,640,597,a heard of elephants are walking through the field in a line
+COCO_train2014_000000000597.jpg,./coco-2014/train/data/COCO_train2014_000000000597.jpg,248,640,597,elephant herd in a line walking across savanna
+COCO_train2014_000000000597.jpg,./coco-2014/train/data/COCO_train2014_000000000597.jpg,248,640,597,a herd of elephants walking across a dry grass field
+COCO_train2014_000000000597.jpg,./coco-2014/train/data/COCO_train2014_000000000597.jpg,248,640,597,a herd of elephants cross an exotic savanna
+COCO_train2014_000000000605.jpg,./coco-2014/train/data/COCO_train2014_000000000605.jpg,480,640,605,pastry water and a cup of coffee with spoon
+COCO_train2014_000000000605.jpg,./coco-2014/train/data/COCO_train2014_000000000605.jpg,480,640,605,a cup of liquid with a fancy design on top of it
+COCO_train2014_000000000605.jpg,./coco-2014/train/data/COCO_train2014_000000000605.jpg,480,640,605,cup of coffee with dessert items on a wooden grained table
+COCO_train2014_000000000605.jpg,./coco-2014/train/data/COCO_train2014_000000000605.jpg,480,640,605,a cappuccino cup next to plates of deserts
+COCO_train2014_000000000605.jpg,./coco-2014/train/data/COCO_train2014_000000000605.jpg,480,640,605,a cup of coffee on a plate with a spoon
+COCO_train2014_000000000612.jpg,./coco-2014/train/data/COCO_train2014_000000000612.jpg,480,640,612,large group of stuffed animals sitting on top of a red bed 
+COCO_train2014_000000000612.jpg,./coco-2014/train/data/COCO_train2014_000000000612.jpg,480,640,612,a brightly decorated bedroom with assorted stuffed animals in the room 
+COCO_train2014_000000000612.jpg,./coco-2014/train/data/COCO_train2014_000000000612.jpg,480,640,612,a bunch of stuffed animals laying on a bed
+COCO_train2014_000000000612.jpg,./coco-2014/train/data/COCO_train2014_000000000612.jpg,480,640,612,a group of teddy bears laying on top of a red bed
+COCO_train2014_000000000612.jpg,./coco-2014/train/data/COCO_train2014_000000000612.jpg,480,640,612,there is a canopy bed with red sheets and a bunch of stuffed animal on it there are two furry lamps on nightstands next to the bed
+COCO_train2014_000000000620.jpg,./coco-2014/train/data/COCO_train2014_000000000620.jpg,640,480,620,three pans of pizza in a cart that holds pizzas 
+COCO_train2014_000000000620.jpg,./coco-2014/train/data/COCO_train2014_000000000620.jpg,640,480,620,large cheese pizzas stacked in a warming oven
+COCO_train2014_000000000620.jpg,./coco-2014/train/data/COCO_train2014_000000000620.jpg,640,480,620,pans of dough sit atop racks holding pizzas 
+COCO_train2014_000000000620.jpg,./coco-2014/train/data/COCO_train2014_000000000620.jpg,640,480,620,some large pizzas on trays and some orange floor tiles 
+COCO_train2014_000000000620.jpg,./coco-2014/train/data/COCO_train2014_000000000620.jpg,640,480,620,a couple of pizzas are sitting on racks
+COCO_train2014_000000000625.jpg,./coco-2014/train/data/COCO_train2014_000000000625.jpg,446,640,625,three people in a grass field reaching for a frisbee in the air
+COCO_train2014_000000000625.jpg,./coco-2014/train/data/COCO_train2014_000000000625.jpg,446,640,625,three girls playing frisbee together in a field
+COCO_train2014_000000000625.jpg,./coco-2014/train/data/COCO_train2014_000000000625.jpg,446,640,625,a group of woman standing in a field trying to catch a frisbee
+COCO_train2014_000000000625.jpg,./coco-2014/train/data/COCO_train2014_000000000625.jpg,446,640,625,three young women are trying to catch a frisbee
+COCO_train2014_000000000625.jpg,./coco-2014/train/data/COCO_train2014_000000000625.jpg,446,640,625,3 people attempt to catch a frisbee in midair 
+COCO_train2014_000000000629.jpg,./coco-2014/train/data/COCO_train2014_000000000629.jpg,427,640,629,rusted red motorcycle parked beside a red building 
+COCO_train2014_000000000629.jpg,./coco-2014/train/data/COCO_train2014_000000000629.jpg,427,640,629,a motorcycle parked on the side of a building with mural
+COCO_train2014_000000000629.jpg,./coco-2014/train/data/COCO_train2014_000000000629.jpg,427,640,629,a close up of a motorcycle parked on the sidewalk next to a door
+COCO_train2014_000000000629.jpg,./coco-2014/train/data/COCO_train2014_000000000629.jpg,427,640,629,an old motorcycle rests on its kickstand by a door in front of a wall with a mural of a tree
+COCO_train2014_000000000629.jpg,./coco-2014/train/data/COCO_train2014_000000000629.jpg,427,640,629,an old motorcycle parked outside a rustic building
+COCO_train2014_000000000634.jpg,./coco-2014/train/data/COCO_train2014_000000000634.jpg,640,427,634,a young man riding a skateboard down a ramp
+COCO_train2014_000000000634.jpg,./coco-2014/train/data/COCO_train2014_000000000634.jpg,640,427,634,a kid on a skate board riding on a ramp
+COCO_train2014_000000000634.jpg,./coco-2014/train/data/COCO_train2014_000000000634.jpg,640,427,634,a man riding a skateboard on a ramp
+COCO_train2014_000000000634.jpg,./coco-2014/train/data/COCO_train2014_000000000634.jpg,640,427,634,a teenager riding a skateboard at a skate park
+COCO_train2014_000000000634.jpg,./coco-2014/train/data/COCO_train2014_000000000634.jpg,640,427,634,a person standing on a skateboard and skating at a park
+COCO_train2014_000000000643.jpg,./coco-2014/train/data/COCO_train2014_000000000643.jpg,375,500,643,a computer desk with a desktop computer and a stuffed turtle on top 
+COCO_train2014_000000000643.jpg,./coco-2014/train/data/COCO_train2014_000000000643.jpg,375,500,643,a desktop computer with a stuffed animal turtle on top
+COCO_train2014_000000000643.jpg,./coco-2014/train/data/COCO_train2014_000000000643.jpg,375,500,643,there is a stuffed turtle on the computer monitor 
+COCO_train2014_000000000643.jpg,./coco-2014/train/data/COCO_train2014_000000000643.jpg,375,500,643,a desktop computer and monitor on a  desk
+COCO_train2014_000000000643.jpg,./coco-2014/train/data/COCO_train2014_000000000643.jpg,375,500,643,a computer is on a desk along with several knickknacks
+COCO_train2014_000000000650.jpg,./coco-2014/train/data/COCO_train2014_000000000650.jpg,427,640,650,a curious looking cat sitting on a car
+COCO_train2014_000000000650.jpg,./coco-2014/train/data/COCO_train2014_000000000650.jpg,427,640,650,cat sitting on top of car with brush behind 
+COCO_train2014_000000000650.jpg,./coco-2014/train/data/COCO_train2014_000000000650.jpg,427,640,650,a black gray and white cat a car and bushes
+COCO_train2014_000000000650.jpg,./coco-2014/train/data/COCO_train2014_000000000650.jpg,427,640,650,a cat sitting on top of a car near bushes
+COCO_train2014_000000000650.jpg,./coco-2014/train/data/COCO_train2014_000000000650.jpg,427,640,650,a cat is sitting on top of a vehicle
+COCO_train2014_000000000656.jpg,./coco-2014/train/data/COCO_train2014_000000000656.jpg,472,640,656,a gold and black motorcycle is parked by some grass
+COCO_train2014_000000000656.jpg,./coco-2014/train/data/COCO_train2014_000000000656.jpg,472,640,656,a motorcycle parked in a parking spot in a lot
+COCO_train2014_000000000656.jpg,./coco-2014/train/data/COCO_train2014_000000000656.jpg,472,640,656,there is a orange and black motorcycle that is parked 
+COCO_train2014_000000000656.jpg,./coco-2014/train/data/COCO_train2014_000000000656.jpg,472,640,656,a gold motorcycle parked in parking lot next to a building
+COCO_train2014_000000000656.jpg,./coco-2014/train/data/COCO_train2014_000000000656.jpg,472,640,656,a motorcycle parked in a parking space in front of a store
+COCO_train2014_000000000659.jpg,./coco-2014/train/data/COCO_train2014_000000000659.jpg,425,640,659,train with bright striped rear with attendants and onlookers on platform
+COCO_train2014_000000000659.jpg,./coco-2014/train/data/COCO_train2014_000000000659.jpg,425,640,659,a yellow and black stripped train next to sidewalk
+COCO_train2014_000000000659.jpg,./coco-2014/train/data/COCO_train2014_000000000659.jpg,425,640,659,a train with googly eyes sitting near a platform
+COCO_train2014_000000000659.jpg,./coco-2014/train/data/COCO_train2014_000000000659.jpg,425,640,659,a train engine carrying carts parked at a station
+COCO_train2014_000000000659.jpg,./coco-2014/train/data/COCO_train2014_000000000659.jpg,425,640,659,there is a train that is stopped at the station
+COCO_train2014_000000000670.jpg,./coco-2014/train/data/COCO_train2014_000000000670.jpg,427,640,670,boxes of fresh fruit on display in a market
+COCO_train2014_000000000670.jpg,./coco-2014/train/data/COCO_train2014_000000000670.jpg,427,640,670,a display of boxes with several types of fruits
+COCO_train2014_000000000670.jpg,./coco-2014/train/data/COCO_train2014_000000000670.jpg,427,640,670,apples oranges and other fruit displayed for sale in boxes
+COCO_train2014_000000000670.jpg,./coco-2014/train/data/COCO_train2014_000000000670.jpg,427,640,670,a bunch of boxes full of assorted fruit on display
+COCO_train2014_000000000670.jpg,./coco-2014/train/data/COCO_train2014_000000000670.jpg,427,640,670,a fruit and produce stand with food being displayed in produce boxes  
+COCO_train2014_000000000671.jpg,./coco-2014/train/data/COCO_train2014_000000000671.jpg,427,640,671,a statue of a roman soldier sitting on a horse
+COCO_train2014_000000000671.jpg,./coco-2014/train/data/COCO_train2014_000000000671.jpg,427,640,671,a statue of a soldier sitting atop a horse
+COCO_train2014_000000000671.jpg,./coco-2014/train/data/COCO_train2014_000000000671.jpg,427,640,671,a statue of a man on top of a horse
+COCO_train2014_000000000671.jpg,./coco-2014/train/data/COCO_train2014_000000000671.jpg,427,640,671,statue of man with cape on horse in front of trees and building
+COCO_train2014_000000000671.jpg,./coco-2014/train/data/COCO_train2014_000000000671.jpg,427,640,671,a statue of a man on a horse and a group of trees with no leaves behind it 
+COCO_train2014_000000000673.jpg,./coco-2014/train/data/COCO_train2014_000000000673.jpg,481,640,673,surfboards sitting on the sand of a beach
+COCO_train2014_000000000673.jpg,./coco-2014/train/data/COCO_train2014_000000000673.jpg,481,640,673,eleven surfboards face down on an empty beach
+COCO_train2014_000000000673.jpg,./coco-2014/train/data/COCO_train2014_000000000673.jpg,481,640,673,many surfboards laying in the sand at the beach
+COCO_train2014_000000000673.jpg,./coco-2014/train/data/COCO_train2014_000000000673.jpg,481,640,673,a sandy beach covered in white surfboards near the ocean
+COCO_train2014_000000000673.jpg,./coco-2014/train/data/COCO_train2014_000000000673.jpg,481,640,673,a big empty beach with a bunch of surf boards
+COCO_train2014_000000000681.jpg,./coco-2014/train/data/COCO_train2014_000000000681.jpg,640,480,681,passenger bus parked on street with sunset in background
+COCO_train2014_000000000681.jpg,./coco-2014/train/data/COCO_train2014_000000000681.jpg,640,480,681,the bus is parked on the quiet road waiting for its passengers
+COCO_train2014_000000000681.jpg,./coco-2014/train/data/COCO_train2014_000000000681.jpg,640,480,681,a large long white bus on a road
+COCO_train2014_000000000681.jpg,./coco-2014/train/data/COCO_train2014_000000000681.jpg,640,480,681,a red and white bus driving down the side of a road
+COCO_train2014_000000000681.jpg,./coco-2014/train/data/COCO_train2014_000000000681.jpg,640,480,681,a white and red bus on side of street
+COCO_train2014_000000000684.jpg,./coco-2014/train/data/COCO_train2014_000000000684.jpg,612,612,684,a woman and a cat reflected in a mirror made of three circular sections
+COCO_train2014_000000000684.jpg,./coco-2014/train/data/COCO_train2014_000000000684.jpg,612,612,684,a three piece circular mirror with a girl taking a picture of it in the reflection
+COCO_train2014_000000000684.jpg,./coco-2014/train/data/COCO_train2014_000000000684.jpg,612,612,684,a woman is taking a picture looking into a mirror while the cat watches
+COCO_train2014_000000000684.jpg,./coco-2014/train/data/COCO_train2014_000000000684.jpg,612,612,684,a woman taking a selfie in front of a stack of mirrors
+COCO_train2014_000000000684.jpg,./coco-2014/train/data/COCO_train2014_000000000684.jpg,612,612,684,a woman that is with a cat in a mirror
+COCO_train2014_000000000690.jpg,./coco-2014/train/data/COCO_train2014_000000000690.jpg,480,640,690,a man on a motorcycle is going down the street
+COCO_train2014_000000000690.jpg,./coco-2014/train/data/COCO_train2014_000000000690.jpg,480,640,690,a motorcyclist travels down a country twolane highway
+COCO_train2014_000000000690.jpg,./coco-2014/train/data/COCO_train2014_000000000690.jpg,480,640,690,a person is riding a motorcycle down a country road
+COCO_train2014_000000000690.jpg,./coco-2014/train/data/COCO_train2014_000000000690.jpg,480,640,690,a man riding a motorcycle next to a lush green forest
+COCO_train2014_000000000690.jpg,./coco-2014/train/data/COCO_train2014_000000000690.jpg,480,640,690,a person riding a motorcycle on a road with trees
+COCO_train2014_000000000706.jpg,./coco-2014/train/data/COCO_train2014_000000000706.jpg,640,428,706,a giraffe standing in front of a tree 
+COCO_train2014_000000000706.jpg,./coco-2014/train/data/COCO_train2014_000000000706.jpg,640,428,706,a single giraffe stand among some busy trees
+COCO_train2014_000000000706.jpg,./coco-2014/train/data/COCO_train2014_000000000706.jpg,640,428,706,a giraffe standing in a stand of trees 
+COCO_train2014_000000000706.jpg,./coco-2014/train/data/COCO_train2014_000000000706.jpg,640,428,706,a giraffe standing alone next to a tree
+COCO_train2014_000000000706.jpg,./coco-2014/train/data/COCO_train2014_000000000706.jpg,640,428,706,the giraffe stands alone in very tall brush
+COCO_train2014_000000000714.jpg,./coco-2014/train/data/COCO_train2014_000000000714.jpg,333,500,714,two different bathrooms one has a green toilet
+COCO_train2014_000000000714.jpg,./coco-2014/train/data/COCO_train2014_000000000714.jpg,333,500,714,a set of two pictures of two toilets in a bathroom
+COCO_train2014_000000000714.jpg,./coco-2014/train/data/COCO_train2014_000000000714.jpg,333,500,714,a bathroom is made over and painted and decorated
+COCO_train2014_000000000714.jpg,./coco-2014/train/data/COCO_train2014_000000000714.jpg,333,500,714,two bathrooms with different decor on each of them
+COCO_train2014_000000000714.jpg,./coco-2014/train/data/COCO_train2014_000000000714.jpg,333,500,714,a split photo with some toilets inside of it 
+COCO_train2014_000000000716.jpg,./coco-2014/train/data/COCO_train2014_000000000716.jpg,480,640,716,people are sitting in the dark using computers 
+COCO_train2014_000000000716.jpg,./coco-2014/train/data/COCO_train2014_000000000716.jpg,480,640,716,a dark room with three people on computers
+COCO_train2014_000000000716.jpg,./coco-2014/train/data/COCO_train2014_000000000716.jpg,480,640,716,the people are using their computers in the dark 
+COCO_train2014_000000000716.jpg,./coco-2014/train/data/COCO_train2014_000000000716.jpg,480,640,716,a group of people that are sitting in front of laptops
+COCO_train2014_000000000716.jpg,./coco-2014/train/data/COCO_train2014_000000000716.jpg,480,640,716,the extra laptop is on standby for the computer users
+COCO_train2014_000000000722.jpg,./coco-2014/train/data/COCO_train2014_000000000722.jpg,457,640,722,people are gathering near bright orange air balloons
+COCO_train2014_000000000722.jpg,./coco-2014/train/data/COCO_train2014_000000000722.jpg,457,640,722,a group of people in a field flying large floats 
+COCO_train2014_000000000722.jpg,./coco-2014/train/data/COCO_train2014_000000000722.jpg,457,640,722,some colorful kits being flown on a field during the day
+COCO_train2014_000000000722.jpg,./coco-2014/train/data/COCO_train2014_000000000722.jpg,457,640,722,clowns are on hand to assist fliers with their kites
+COCO_train2014_000000000722.jpg,./coco-2014/train/data/COCO_train2014_000000000722.jpg,457,640,722,clowns are bowing to each other at an air show
+COCO_train2014_000000000723.jpg,./coco-2014/train/data/COCO_train2014_000000000723.jpg,640,359,723,a motorcycle is parked in front of a cafe
+COCO_train2014_000000000723.jpg,./coco-2014/train/data/COCO_train2014_000000000723.jpg,640,359,723,a motorcycle is parked outside of a cafe
+COCO_train2014_000000000723.jpg,./coco-2014/train/data/COCO_train2014_000000000723.jpg,640,359,723,a motorcycle parked in front of a small cafe
+COCO_train2014_000000000723.jpg,./coco-2014/train/data/COCO_train2014_000000000723.jpg,640,359,723,a large motorcycle sits outside of a bar
+COCO_train2014_000000000723.jpg,./coco-2014/train/data/COCO_train2014_000000000723.jpg,640,359,723,a bar and cafe with a motorcycle parked out front
+COCO_train2014_000000000731.jpg,./coco-2014/train/data/COCO_train2014_000000000731.jpg,480,640,731,a woman holding her umbrella is standing in a quite large puddle 
+COCO_train2014_000000000731.jpg,./coco-2014/train/data/COCO_train2014_000000000731.jpg,480,640,731,female camper standing ankle deep in water under an umbrella
+COCO_train2014_000000000731.jpg,./coco-2014/train/data/COCO_train2014_000000000731.jpg,480,640,731,a woman wearing a pink hat holding a black umbrella
+COCO_train2014_000000000731.jpg,./coco-2014/train/data/COCO_train2014_000000000731.jpg,480,640,731,a lady stands in a flooded grassy spot surrounded by tents
+COCO_train2014_000000000731.jpg,./coco-2014/train/data/COCO_train2014_000000000731.jpg,480,640,731,a woman under and umbrella standing in water on a flooded field with tents in the background
+COCO_train2014_000000000735.jpg,./coco-2014/train/data/COCO_train2014_000000000735.jpg,361,640,735,a woman has her picture taken while she cuts a cake
+COCO_train2014_000000000735.jpg,./coco-2014/train/data/COCO_train2014_000000000735.jpg,361,640,735,a women cutting a large cake with one lit candle
+COCO_train2014_000000000735.jpg,./coco-2014/train/data/COCO_train2014_000000000735.jpg,361,640,735,a woman cutting into a big birthday cake with one candle
+COCO_train2014_000000000735.jpg,./coco-2014/train/data/COCO_train2014_000000000735.jpg,361,640,735,a woman with a knife cutting into a cake
+COCO_train2014_000000000735.jpg,./coco-2014/train/data/COCO_train2014_000000000735.jpg,361,640,735,a woman cuts a large cake that has a lit candle
