@@ -1,0 +1,18 @@
+2025-01-17 19:28:50,080 - INFO - train.py - Arguments: {'config': './configs/train_config.yaml', 'validate': True, 'test': False}
+2025-01-17 19:28:50,080 - DEBUG - utils.py - Attempting to read YAML file from './configs/train_config.yaml'
+2025-01-17 19:28:50,085 - INFO - utils.py - YAML file './configs/train_config.yaml' loaded successfully.
+2025-01-17 19:28:50,086 - DEBUG - utils.py - Configuration loaded: {'dataset_config': {'desc': 'coco-2014 caption dataset', 'train': {'dataset_path': './coco-2014/dataset.json', 'return_dict': True, 'padding': 'longest', 'image_size': [518, 518], 'max_length': 512, 'sampling_fn': {'sampling_fn_name': 'choose_index', 'index': 0}}, 'val': {'dataset_path': './coco-2014/dataset.json', 'return_dict': True, 'padding': 'longest', 'image_size': [518, 518], 'max_length': 512, 'sampling_fn': {'sampling_fn_name': 'choose_index', 'index': 0}}}, 'tokenizer_config': {'tokenizer_name': 'gpt2', 'tokenizer_path': 'openai-community/gpt2'}, 'model_config': {'showandtell_model': {'model_name': 'showandtell', 'model_path': None}, 'image_model': {'model_name': 'dinov2', 'model_path': './weights/dinov2-base-weights.pth', 'freeze': True, 'config': {'hidden_size': 768, 'image_size': 518, 'patch_size': 14}}, 'text_model': {'model_name': 'lstm', 'model_path': None, 'config': {'num_layers': 1, 'hidden_size': 768, 'bidirectional': False}}}, 'trainer_config': {'batch_size': 15, 'accelerator': 'gpu', 'max_epochs': 10, 'log_every_n_steps': 1, 'enable_progress_bar': True, 'overfit_batches': 1, 'logger_config': {'logger_name': 'tensorboard', 'save_dir': './TrainingLogs/', 'name': 'test1', 'log_graph': True, 'prefix': ''}}}
+2025-01-17 19:28:50,086 - INFO - utils.py - Loaded tokenizer configuration: {'tokenizer_name': 'gpt2', 'tokenizer_path': 'openai-community/gpt2'}
+2025-01-17 19:28:50,086 - INFO - model.py - Initializing tokenizer 'gpt2' with arguments: {'tokenizer_path': 'openai-community/gpt2', 'config': {}}
+2025-01-17 19:28:50,371 - DEBUG - model.py - Special tokens added to the tokenizer.
+2025-01-17 19:28:50,372 - INFO - utils.py - Loaded dataset configuration: {'return_dict': True, 'padding': 'longest', 'image_size': [518, 518], 'max_length': 512}
+2025-01-17 19:28:50,372 - INFO - utils.py - Loaded dataset configuration: {'return_dict': True, 'padding': 'longest', 'image_size': [518, 518], 'max_length': 512}
+2025-01-17 19:28:50,372 - INFO - train.py - Loaded Val Dataset: coco-2014 caption dataset, Dataset Length: 100.
+2025-01-17 19:28:50,372 - INFO - utils.py - Loaded model configuration: {'model_name': 'dinov2', 'model_path': './weights/dinov2-base-weights.pth', 'freeze': True, 'config': {'hidden_size': 768, 'image_size': 518, 'patch_size': 14}}
+2025-01-17 19:28:50,373 - INFO - model.py - Loading pretrained DinoV2 Image Encoder from: ./weights/dinov2-base-weights.pth
+2025-01-17 19:28:52,098 - INFO - utils.py - Loaded model configuration: {'model_name': 'lstm', 'model_path': None, 'config': {'num_layers': 1, 'hidden_size': 768, 'bidirectional': False}}
+2025-01-17 19:28:52,098 - INFO - model.py - Initializing new LSTM Text Encoder with vocab size: 50259
+2025-01-17 19:28:52,129 - INFO - utils.py - Loaded model configuration: {'model_name': 'showandtell', 'model_path': None}
+2025-01-17 19:28:52,129 - INFO - model.py - Initializing new ShowAndTell model with provided components.
+2025-01-17 19:28:52,636 - INFO - model.py - Initializing Lightning Model with ShowAndTell core and optimizer: Adam
+2025-01-17 19:28:52,636 - INFO - utils.py - Loaded trainer configuration: {'accelerator': 'gpu', 'max_epochs': 10, 'log_every_n_steps': 1, 'enable_progress_bar': True, 'overfit_batches': 1} and logger configuration: {'save_dir': './TrainingLogs/', 'name': 'test1', 'log_graph': True, 'prefix': ''}

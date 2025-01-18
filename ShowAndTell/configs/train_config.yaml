@@ -1,0 +1,68 @@
+dataset_config:
+  desc: coco-2014 caption dataset
+  train:
+    dataset_path: ./coco-2014/dataset.json
+    return_dict: true
+    padding: longest
+    image_size: 
+      - 518
+      - 518
+    max_length: 512
+    sampling_fn:
+      sampling_fn_name: choose_index
+      index: 0
+  
+  val:
+    dataset_path: ./coco-2014/dataset.json
+    return_dict: true
+    padding: longest
+    image_size: 
+      - 518
+      - 518
+    max_length: 512
+    sampling_fn:
+      sampling_fn_name: choose_index
+      index: 0
+
+tokenizer_config:
+  tokenizer_name: gpt2
+  tokenizer_path: "openai-community/gpt2"
+
+model_config:
+  showandtell_model:
+    model_name: showandtell
+    model_path: # final_model
+
+  image_model:
+    model_name: dinov2
+    model_path: ./weights/dinov2-base-weights.pth
+    freeze: true
+    config:
+      hidden_size: 768
+      image_size: 518
+      patch_size: 14
+
+  text_model:
+    model_name: lstm
+    model_path: # text encoder weights
+    config:
+      num_layers: 1
+      hidden_size: 768
+      bidirectional: false
+
+trainer_config:
+  # Trainer args
+  batch_size: 15
+  accelerator: 'gpu'
+  max_epochs: 10
+  log_every_n_steps: 1
+  enable_progress_bar: true
+  overfit_batches: 1
+
+  #logger args
+  logger_config:
+    logger_name: tensorboard
+    save_dir: "./TrainingLogs/"
+    name: test1
+    log_graph: true
+    prefix: ''

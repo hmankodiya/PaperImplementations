@@ -1,12 +1,12 @@
 .vscode
 .pyc
 __pycache__
-
-/coco-2014/raw
-/coco-2014/train
-lightning_logs
 ShowAndTell
-wandb
+
 weights
 dinov2-baset-weights.pth
 /rough.ipynb
+COCO*
+TrainingLogs
+coco-*/raw
+coco-*/train
