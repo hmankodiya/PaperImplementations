@@ -1,7 +1,7 @@
 dataset_config:
   desc: coco-2014 caption dataset
   train:
-    dataset_path: ./coco-2014/dataset.json
+    dataset_path: ./coco-2014/dataset_json/train_dataset.json
     return_dict: true
     padding: longest
     image_size: 
@@ -13,7 +13,7 @@ dataset_config:
       index: 0
   
   val:
-    dataset_path: ./coco-2014/dataset.json
+    dataset_path: ./coco-2014/dataset_json/val_dataset.json
     return_dict: true
     padding: longest
     image_size: 
@@ -63,6 +63,6 @@ trainer_config:
   logger_config:
     logger_name: tensorboard
     save_dir: "./TrainingLogs/"
-    name: test1
+    name: full_training
     log_graph: true
     prefix: ''

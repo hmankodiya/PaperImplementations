@@ -10,3 +10,4 @@ COCO*
 TrainingLogs
 coco-*/raw
 coco-*/train
+_train_dataset.json
