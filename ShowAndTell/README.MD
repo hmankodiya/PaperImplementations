@@ -75,5 +75,62 @@ This will create a folder containing files such as:
    ```
 ---
 
+### Training the Model
 
-Classes: airplane, boat
+The `train.py` script is the main entry point for training the image captioning model. It uses a configuration file to define the model, dataset, and training parameters.
+
+#### **Usage**
+Run the script with the required configuration file and optional flags:
+
+```bash
+python train.py --config ./configs/train_config.yaml --validate true
+```
+
+#### **Arguments**
+
+- **`--config`** (required):
+  - **Description:** Path to the configuration file containing model, dataset, and training parameters.
+  - **Example:** `./configs/train_config.yaml`
+
+- **`--validate`** (optional):
+  - **Description:** If set to `true`, the model will be validated on the validation dataset after training.
+  - **Default Value:** `false`
+  - **Example:** `--validate true`
+
+- **`--test`** (optional):
+  - **Description:** If set to `true`, the model will be tested on the test dataset after training.
+  - **Default Value:** `false`
+  - **Example:** `--test true`
+
+#### **Example Commands**
+
+1. **Train without validation or testing:**
+   ```bash
+   python train.py --config ./configs/train_config.yaml
+   ```
+
+2. **Train and validate:**
+   ```bash
+   python train.py --config ./configs/train_config.yaml --validate true
+   ```
+
+3. **Train and test:**
+   ```bash
+   python train.py --config ./configs/train_config.yaml --test true
+   ```
+
+4. **Train, validate, and test:**
+   ```bash
+   python train.py --config ./configs/train_config.yaml --validate true --test true
+   ```
+
+#### **Configuration File**
+The configuration file is expected to define:
+- Model parameters (e.g., encoder and decoder settings).
+- Dataset paths and preprocessing options.
+- Training and validation split configurations.
+- Hyperparameters like learning rate, batch size, and number of epochs.
+
+For details on how to structure the configuration file, refer to [configs/train_config.yaml](./configs/train_config.yaml).
+
+---
