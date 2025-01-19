@@ -4,25 +4,25 @@ dataset_config:
     dataset_path: ./coco-2014/dataset_json/train_dataset.json
     return_dict: true
     padding: longest
-    image_size: 
+    image_size:
       - 518
       - 518
-    max_length: 512
+    max_length: 40
     sampling_fn:
-      sampling_fn_name: choose_index
-      index: 0
-  
+      sampling_fn_name: random_sample
+      # index: 0
+
   val:
     dataset_path: ./coco-2014/dataset_json/val_dataset.json
     return_dict: true
     padding: longest
-    image_size: 
+    image_size:
       - 518
       - 518
-    max_length: 512
+    max_length: 40
     sampling_fn:
-      sampling_fn_name: choose_index
-      index: 0
+      sampling_fn_name: random_sample
+      # index: 0
 
 tokenizer_config:
   tokenizer_name: gpt2
@@ -31,7 +31,7 @@ tokenizer_config:
 model_config:
   showandtell_model:
     model_name: showandtell
-    model_path: # final_model
+    model_path: null # showandtell model weights
 
   image_model:
     model_name: dinov2
@@ -44,25 +44,40 @@ model_config:
 
   text_model:
     model_name: lstm
-    model_path: # text encoder weights
+    model_path: null # text encoder weights
     config:
       num_layers: 1
       hidden_size: 768
-      bidirectional: false
+      bidirectional: true
 
 trainer_config:
+  batch_size: 50
+
   # Trainer args
-  batch_size: 15
-  accelerator: 'gpu'
-  max_epochs: 10
-  log_every_n_steps: 1
-  enable_progress_bar: true
-  overfit_batches: 1
+  trainer_args:
+    accelerator: "gpu"
+    max_epochs: 30
+    log_every_n_steps: 1
+    enable_progress_bar: true
+    enable_checkpointing: true
+    # overfit_batches: 1
+
+  # checkpointing
+  model_checkpoint:
+    dirpath: "inherit"
+    filename: "{epoch}-{val_loss:.2f}-{bleu_score:.2f}"
+    save_top_k: 2
+    monitor: "bleu_score"
+    mode: "max"
+
+  # saving args
+  save_config:
+    save_state_dict: true
+    save_path: "inherit"
 
   #logger args
   logger_config:
-    logger_name: tensorboard
-    save_dir: "./TrainingLogs/"
-    name: full_training
+    save_dir: "./TrainingLogs"
+    name: fulltraining_run_3
     log_graph: true
-    prefix: ''
+    prefix: ""

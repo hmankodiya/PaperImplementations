@@ -164,9 +164,9 @@ class Dinov2Encoder(nn.Module):
         return model
 
 
-class TextEncoder(nn.Module):
+class LSTMTextEncoder(nn.Module):
     def __init__(self, vocab_size, **kwargs):
-        super(TextEncoder, self).__init__()
+        super(LSTMTextEncoder, self).__init__()
         self.vocab_size = vocab_size
         self.num_layers = kwargs.pop("num_layers", NUM_LAYERS)
         self.hidden_size = kwargs.pop("hidden_size", HIDDEN_SIZE)
@@ -359,12 +359,19 @@ class Model(pl.LightningModule):
         pixel_values = batch["pixel_values"]
         (logits,) = self._step(pixel_values, input_ids=None)
         logits = logits.detach().cpu()
-        out_tokens = logits.argmax(-1).numpy()
+        out_tokens = logits.argmax(-1).detach().cpu().numpy().tolist()
 
-        return list(map(self.tokenizer.batch_decode, out_tokens)), (logits, out_tokens)
+        prediction_sequence = list(
+            map(
+                "".join,
+                list(map(self.tokenizer.batch_decode, out_tokens)),
+            )
+        )[0]
+
+        return prediction_sequence, (logits, out_tokens)
 
 
-def calculate_bleu(pred, target, ngram=2):
+def calculate_bleu(pred, target, ngram=4):
     return bleu_score(pred, target, n_gram=ngram)
 
 
@@ -374,12 +381,12 @@ def load_lstm_text_encoder(vocab_size, pretrained_model_path=None, **kwargs):
             logger.info(
                 f"Loading pretrained LSTM Text Encoder from: {pretrained_model_path}"
             )
-            return TextEncoder.from_pretrained(
+            return LSTMTextEncoder.from_pretrained(
                 pretrained_model_path, vocab_size, **kwargs
             )
 
         logger.info(f"Initializing new LSTM Text Encoder with vocab size: {vocab_size}")
-        return TextEncoder(vocab_size, **kwargs)
+        return LSTMTextEncoder(vocab_size, **kwargs)
     except Exception as e:
         logger.error(f"Failed to load LSTM Text Encoder: {e}")
         raise
@@ -415,7 +422,7 @@ def load_show_and_tell(
                 f"Loading pretrained ShowAndTell model from: {pretrained_model_path}"
             )
             return ShowAndTell.from_pretrained(
-                pretrained_model_path, image_encoder, text_encoder
+                pretrained_model_path, tokenizer, image_encoder, text_encoder
             )
 
         logger.info("Initializing new ShowAndTell model with provided components.")
@@ -434,6 +441,7 @@ def load_lightning_model(tokenizer, showandtell_core, optimizer=torch.optim.Adam
     except Exception as e:
         logger.error(f"Failed to load Lightning Model: {e}")
         raise
+
 
 
 # MODEL_DICT = {

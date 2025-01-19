@@ -1,0 +1,59 @@
+inference_dataset_config:
+  desc: coco-2014 caption dataset
+  return_dict: true
+  return_tensors: "pt"
+  image_size:
+    - 518
+    - 518
+  image_paths:
+    [
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000005877.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000002670.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000000748.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000004113.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000001043.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000006276.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000001110.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000004311.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000001152.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000002196.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000002819.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000003098.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000001076.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000005433.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000002380.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000002200.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000002787.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000001172.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000002465.jpg",
+      "/home/harsh/fiftyone/coco-2014/test/data/COCO_test2014_000000003448.jpg",
+    ]
+
+tokenizer_config:
+  tokenizer_name: gpt2
+  tokenizer_path: "openai-community/gpt2"
+
+model_config:
+  showandtell_model:
+    model_name: showandtell
+    model_path: "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/TrainingLogs/fulltraining_run_1/model/showtell_core.pth"
+
+  image_model:
+    model_name: dinov2
+    # model_path: ./weights/dinov2-base-weights.pthtrue
+    freeze: true
+    config:
+      hidden_size: 768
+      image_size: 518
+      patch_size: 14
+
+  text_model:
+    model_name: lstm
+    # model_path: # text encoder weights
+    config:
+      num_layers: 1
+      hidden_size: 768
+      bidirectional: false
+
+inference_args:
+  accelerator: "gpu"

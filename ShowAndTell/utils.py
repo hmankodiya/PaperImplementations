@@ -113,6 +113,7 @@ def make_dir(paths):
             logger.info(f"Directory '{path}' created successfully.")
         except Exception as e:
             logger.error(f"Failed to create directory '{path}'. Error: {e}")
+            raise e
 
 
 def get_split_config(config):
@@ -228,6 +229,47 @@ def get_dataset_config(dataset_config: dict):
         logger.info(f"Loaded dataset configuration: {dataset_config}")
 
         return dataset_path, sampling_config, dataset_config
+
+    except Exception as e:
+        logger.error(f"An error occurred while processing 'dataset_config': {e}")
+        raise
+
+
+def get_inference_dataset_config(config: dict):
+    """
+    Extracts and validates the dataset configuration from the provided configuration dictionary.
+
+    Args:
+        config (dict): A dictionary containing the configuration, including 'dataset_config'.
+
+    Returns:
+        tuple: A tuple containing the dataset path and description.
+
+    Raises:
+        KeyError: If 'dataset_config' is missing or required keys are not found.
+        ValueError: If the dataset configuration contains invalid values.
+    """
+    try:
+        # Extract dataset_config
+
+        # Validate required fields
+        if "inference_dataset_config" not in config:
+            raise KeyError(
+                "Missing required key in 'inference_dataset_config': 'config'"
+            )
+
+        config = config.pop("inference_dataset_config")
+        description = config.pop("desc", "Dataset description not provided.")
+
+        if "image_paths" not in config:
+            raise KeyError("Missing required key in 'image_paths': 'config'")
+
+        image_paths = config.pop("image_paths")
+
+        # Log the configuration
+        logger.info(f"Loaded dataset configuration: {config}")
+
+        return description, image_paths, config
 
     except Exception as e:
         logger.error(f"An error occurred while processing 'dataset_config': {e}")
@@ -368,26 +410,29 @@ def get_trainer_config(config):
     try:
         # Extract trainer_config
         trainer_config = config.get("trainer_config", {})
-        batch_size = trainer_config.pop("batch_size", 1)
-        logger_config = trainer_config.pop("logger_config", {})
-        logger_name = logger_config.pop("logger_name", None)
 
         # Check if trainer_config is empty
         if not trainer_config:
             logger.info("`trainer_config` is missing or empty. Returning None.")
             return None
 
+        batch_size = trainer_config.pop("batch_size", 1)
+        trainer_args = trainer_config.pop("trainer_args", {})
+        logger_config = trainer_config.pop("logger_config", None)
+        checkpoint_config = trainer_config.pop("model_checkpoint", {})
+        save_config = trainer_config.pop("save_config", {})
+
         logger.info(
-            f"Loaded trainer configuration: {trainer_config} and logger configuration: {logger_config}"
+            f"Loaded trainer args: {trainer_args}, logger configuration: {logger_config}, checkpoint configuration: {checkpoint_config}, batch size {batch_size}, save configuration {save_config}"
         )
-        return trainer_config, batch_size, logger_config, logger_name
+        return batch_size, trainer_args, logger_config, checkpoint_config, save_config
 
     except Exception as e:
         logger.error(f"An error occurred while processing 'trainer_config': {e}")
         raise
 
 
-def get_prediction_config(config, pop_samples=True):
+def get_inference_args(config):
     """
     Extracts and validates the prediction configuration from the provided configuration dictionary.
 
@@ -399,19 +444,12 @@ def get_prediction_config(config, pop_samples=True):
     """
     try:
         # Extract prediction_config
-        prediction_config = config.get("prediction_config", {})
+        inference_args = config.get("inference_args", {})
 
-        # Check if prediction_config is empty
-        if not prediction_config:
-            return None
+        logger.info(f"Loaded inference configuration: {inference_args}")
 
-        logger.info(f"Loaded prediction configuration: {prediction_config}")
-
-        if pop_samples:
-            return prediction_config, prediction_config.pop("samples", None)
-
-        return prediction_config
+        return inference_args
 
     except Exception as e:
-        logger.error(f"An error occurred while processing 'prediction_config': {e}")
-        raise
+        logger.error(f"An error occurred while processing 'inference_args': {e}")
+        raise e

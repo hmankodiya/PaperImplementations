@@ -18,6 +18,7 @@ from model import (
 )
 from utils import (
     read_yaml,
+    make_dir,
     get_split_config,
     get_dataset_config,
     get_image_model_config,
@@ -28,8 +29,13 @@ from utils import (
     get_show_and_tell_model_config,
 )
 
-PRECISION = 'medium'
+PRECISION = "medium"
 torch.set_float32_matmul_precision(PRECISION)
+
+SAVE_PATH = "inherit"
+CHECKPOINT_PATH = "inherit"
+LOGGER_PATH = "./TrainingLogs"
+
 
 logging.basicConfig(
     filename="./logs.txt",
@@ -43,7 +49,7 @@ logger = logging.getLogger(__name__)  # Logger for the main script
 if __name__ == "__main__":
     """
     Main script for training and evaluating an image captioning model.
-    
+
     This script initializes and configures:
         - Tokenizers
         - Datasets and DataLoaders
@@ -202,7 +208,9 @@ if __name__ == "__main__":
     model = load_lightning_model(tokenizer, showtell_core)
 
     # Initialize Trainer and DataLoader
-    trainer_config, batch_size, logger_config, logger_name = get_trainer_config(config)
+    batch_size, trainer_args, logger_config, checkpoint_config, save_config = (
+        get_trainer_config(config)
+    )
 
     # Training DataLoader
     train_image_text_collator = ImageTextCollator(
@@ -241,10 +249,36 @@ if __name__ == "__main__":
         )
 
     # Initialize Trainer
-    train_logger = pl.loggers.TensorBoardLogger(**logger_config)
-    trainer = pl.Trainer(logger=train_logger, **trainer_config)
+    train_logger = False
+    if logger_config:
+        train_logger = pl.loggers.TensorBoardLogger(**logger_config)
+
+    if checkpoint_config.get("dirpath", CHECKPOINT_PATH) == "inherit":
+        checkpoint_config["dirpath"] = os.path.join(
+            LOGGER_PATH, logger_config.get("name", "lightning_logs"), "checkpoint"
+        )
+    
+    
+    model_checkpoint = pl.callbacks.ModelCheckpoint(**checkpoint_config)
+    trainer = pl.Trainer(
+        logger=train_logger,
+        callbacks=[model_checkpoint],
+        **trainer_args,
+    )
 
     # Start training
     trainer.fit(
         model, train_dataloaders=train_dataloader, val_dataloaders=val_dataloader
     )
+
+    if save_config and save_config.get("save_state_dict", True):
+        save_path = save_config.get("save_path", SAVE_PATH)
+        if save_path == "inherit":
+            save_path = os.path.join(
+                LOGGER_PATH, logger_config.get("name", ""), "model"
+            )
+
+        make_dir(save_path)
+        save_path = os.path.join(save_path, "showtell_core.pth")
+        logger.info(f"Saving trained model at {save_path}")
+        torch.save(showtell_core.state_dict(), save_path)

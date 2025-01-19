@@ -134,3 +134,17 @@ The configuration file is expected to define:
 For details on how to structure the configuration file, refer to [configs/train_config.yaml](./configs/train_config.yaml).
 
 ---
+
+# Results
+
+## LSTM Text Decoder Performance
+
+- **BLEU-2 Score**: **17.9%**
+
+### Sample Inference Results
+
+The following figure illustrates example outputs from the model's predictions on the test dataset:
+
+![Sample Inference Results](./Inference_example.png)
+
+---

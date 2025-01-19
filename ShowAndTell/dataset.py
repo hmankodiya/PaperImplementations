@@ -25,7 +25,7 @@ logger.setLevel(logging.DEBUG)  # Set logger to capture DEBUG and above messages
 MAX_LENGTH = 40
 
 # IMAGE SIZE
-SIZE = (224, 224)
+SIZE = (518, 518)
 
 
 def random_sample(documents, **kwargs):
@@ -138,7 +138,7 @@ def normalize_image(
     return pixel_values_array
 
 
-def load_image(path, size, return_tensors=None):
+def load_image(path, size, return_tensors=None, imagenet_normalize=True):
     """
     Loads and preprocesses an image from the given path.
 
@@ -151,10 +151,11 @@ def load_image(path, size, return_tensors=None):
         np.ndarray or torch.Tensor: Preprocessed image.
     """
     pixel_values = Image.open(path).resize(size)
-    pixel_values = pixel_values.convert("RGB")
-    normalized_pixel_values = normalize_image(
-        np.transpose(np.array(pixel_values) / 255.0, axes=[2, 0, 1])
-    )
+    normalized_pixel_values = np.array(pixel_values.convert("RGB")) / 255.0
+    if imagenet_normalize:
+        normalized_pixel_values = normalize_image(
+            np.transpose(normalized_pixel_values, axes=[2, 0, 1])
+        )
 
     if return_tensors == "pt":
         return torch.from_numpy(normalized_pixel_values)
@@ -276,7 +277,10 @@ class ImageCaptionDataset(torch.utils.data.Dataset):
         image_id, image_path = instance["image_id"], instance["file_path"]
 
         pixel_values = load_image(
-            image_path, size=self.image_size, return_tensors=self.return_tensors
+            image_path,
+            size=self.image_size,
+            return_tensors=self.return_tensors,
+            imagenet_normalize=True,
         )
 
         sampled_document = self.sample_document(instance["captions"]).strip()
@@ -303,6 +307,31 @@ class ImageCaptionDataset(torch.utils.data.Dataset):
             )
 
         return pixel_values, labels
+
+
+class InferenceDataset(torch.utils.data.Dataset):
+    def __init__(self, image_paths, return_tensors=None, return_dict=False, **kwargs):
+        self.image_paths = image_paths
+        self.return_tensors = return_tensors
+        self.return_dict = return_dict
+        self.image_size = kwargs.pop("image_size", SIZE)
+        self.kwargs = kwargs
+
+    def __len__(self):
+        return len(self.image_paths)
+
+    def __getitem__(self, index):
+        pixel_values = load_image(
+            self.image_paths[index],
+            size=self.image_size,
+            return_tensors=self.return_tensors,
+            imagenet_normalize=self.kwargs.get('imagenet_normalize', True)
+        )
+
+        if self.return_dict:
+            return dict(pixel_values=pixel_values)
+
+        return pixel_values
 
 
 class ImageTextCollator:
