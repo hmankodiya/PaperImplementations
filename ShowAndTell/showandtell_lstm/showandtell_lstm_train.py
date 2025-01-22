@@ -1,32 +1,35 @@
 import os
-import random
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from argparse import ArgumentParser
 import logging
-import numpy as np
 
 import torch
 import pytorch_lightning as pl
 from transformers import Dinov2Config
 
 from dataset import ImageCaptionDataset, ImageTextCollator
-from model import (
-    load_tokenizer,
-    load_dinov2_image_encoder,
-    load_lstm_text_encoder,
-    load_show_and_tell,
-    load_lightning_model,
-)
+from image_model.image_model import load_dinov2_image_encoder
+from tokenizer import load_tokenizer
 from utils import (
     read_yaml,
     make_dir,
     get_split_config,
-    get_dataset_config,
-    get_image_model_config,
     get_tokenizer_config,
-    get_text_model_config,
+    get_dataset_config,
     get_model_config,
-    get_trainer_config,
-    get_show_and_tell_model_config,
+    get_image_model_config,
+    get_text_model_config,
+    get_showandtell_lstm_trainer_config,
+    get_showandtell_lstm_model_config,
+)
+
+from showandtell_lstm.showandtell_lstm_model import (
+    load_lstm_encoder,
+    load_showandtell_lstm,
+    load_lightning_showandtell_lstm,
 )
 
 PRECISION = "medium"
@@ -34,11 +37,11 @@ torch.set_float32_matmul_precision(PRECISION)
 
 SAVE_PATH = "inherit"
 CHECKPOINT_PATH = "inherit"
-LOGGER_PATH = "./TrainingLogs"
+LOGGER_PATH = "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/showandtell_lstm/TrainingLogs"
 
 
 logging.basicConfig(
-    filename="./logs.txt",
+    filename="/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/logs.txt",
     format="%(asctime)s - %(levelname)s - %(filename)s - %(message)s",
     level=logging.INFO,
     filemode="w",
@@ -93,14 +96,15 @@ if __name__ == "__main__":
         tokenizer_config=tokenizer_config,
     )
 
+
     # Initialize Dataset
     dataset_desc, (train_split_config, val_split_config, test_split_config) = (
         get_split_config(config)
     )
 
     # Prepare training dataset
-    train_dataset_path, train_sampling_config, train_dataset_config = (
-        get_dataset_config(train_split_config)
+    train_dataset_path, train_sampling_config, train_dataset_config = get_dataset_config(
+        train_split_config
     )
     if train_sampling_config:
         sampling_fn_name, sampling_fn_args = (
@@ -189,27 +193,29 @@ if __name__ == "__main__":
     text_model_name, text_model_path, text_model_config = get_text_model_config(
         model_config
     )
-    text_encoder = load_lstm_text_encoder(
+    lstm_text_encoder = load_lstm_encoder(
         len(tokenizer), pretrained_model_path=text_model_path, **text_model_config
     )
 
     # Combined model initialization (Show and Tell)
-    showtell_core_model_name, showtell_core_model_path, showtell_core_config = (
-        get_show_and_tell_model_config(model_config)
-    )
-    showtell_core = load_show_and_tell(
+    (
+        showandtell_lstm_core_model_name,
+        showandtell_lstm_core_model_path,
+        showandtell_lstm_core_config,
+    ) = get_showandtell_lstm_model_config(model_config)
+    showandtell_lstm_core = load_showandtell_lstm(
         tokenizer,
         image_encoder,
-        text_encoder,
-        pretrained_model_path=showtell_core_model_path,
+        lstm_text_encoder,
+        pretrained_model_path=showandtell_lstm_core_model_path,
     )
 
     # PyTorch Lightning model wrapper
-    model = load_lightning_model(tokenizer, showtell_core)
+    model = load_lightning_showandtell_lstm(tokenizer, showandtell_lstm_core)
 
     # Initialize Trainer and DataLoader
     batch_size, trainer_args, logger_config, checkpoint_config, save_config = (
-        get_trainer_config(config)
+        get_showandtell_lstm_trainer_config(config)
     )
 
     # Training DataLoader
@@ -257,8 +263,7 @@ if __name__ == "__main__":
         checkpoint_config["dirpath"] = os.path.join(
             LOGGER_PATH, logger_config.get("name", "lightning_logs"), "checkpoint"
         )
-    
-    
+
     model_checkpoint = pl.callbacks.ModelCheckpoint(**checkpoint_config)
     trainer = pl.Trainer(
         logger=train_logger,
@@ -279,6 +284,6 @@ if __name__ == "__main__":
             )
 
         make_dir(save_path)
-        save_path = os.path.join(save_path, "showtell_core.pth")
+        save_path = os.path.join(save_path, "showandtell_lstm_core.pth")
         logger.info(f"Saving trained model at {save_path}")
-        torch.save(showtell_core.state_dict(), save_path)
+        torch.save(showandtell_lstm_core.state_dict(), save_path)

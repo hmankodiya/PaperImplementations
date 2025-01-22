@@ -13,9 +13,7 @@ import torch
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)  # Set logger to capture DEBUG and above messages
 
-DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 SPLIT_KEYS = ["train", "val", "test"]
-# DEVICE = "cpu"
 
 
 def preprocess_text(text):
@@ -224,7 +222,7 @@ def get_dataset_config(dataset_config: dict):
             raise KeyError("Missing required key in 'dataset_config': 'dataset_path'")
 
         dataset_path = dataset_config.pop("dataset_path")
-        sampling_config = dataset_config.pop("sampling_fn", None)
+        sampling_config = dataset_config.pop("sampling_fn", dict())
         # Log the configuration
         logger.info(f"Loaded dataset configuration: {dataset_config}")
 
@@ -356,7 +354,32 @@ def get_text_model_config(config):
         raise
 
 
-def get_show_and_tell_model_config(config):
+def get_showandtell_lstm_model_config(config):
+    try:
+        # Validate required fields
+        if "showandtell_model" not in config:
+            raise KeyError(
+                "Missing required keys in 'model_config': 'showandtell_model'"
+            )
+
+        config = config["showandtell_model"]
+
+        if "model_name" not in config:
+            raise KeyError("Missing required keys in 'model_config': 'model_name'")
+
+        # Log the configuration
+        logger.info(f"Loaded model configuration: {config}")
+
+        model_name = config.pop("model_name")
+        model_path = config.pop("model_path", None)
+
+        return (model_name, model_path, config)
+
+    except Exception as e:
+        logger.error(f"An error occurred while processing 'model_config': {e}")
+        raise
+
+def get_showandtell_gpt2_model_config(config):
     try:
         # Validate required fields
         if "showandtell_model" not in config:
@@ -397,7 +420,7 @@ def get_model_config(config):
         raise
 
 
-def get_trainer_config(config):
+def get_showandtell_lstm_trainer_config(config):
     """
     Extracts and validates the trainer configuration from the provided configuration dictionary.
 
@@ -426,6 +449,36 @@ def get_trainer_config(config):
             f"Loaded trainer args: {trainer_args}, logger configuration: {logger_config}, checkpoint configuration: {checkpoint_config}, batch size {batch_size}, save configuration {save_config}"
         )
         return batch_size, trainer_args, logger_config, checkpoint_config, save_config
+
+    except Exception as e:
+        logger.error(f"An error occurred while processing 'trainer_config': {e}")
+        raise
+
+def get_huggingface_trainer_config(config):
+    """
+    Extracts and validates the trainer configuration from the provided configuration dictionary.
+
+    Args:
+        config (dict): A dictionary containing the configuration, including 'trainer_config'.
+
+    Returns:
+        dict or None: The processed trainer configuration if it exists and is not empty; otherwise, None.
+    """
+    try:
+        # Extract trainer_config
+        trainer_config = config.get("trainer_config", {})
+
+        # Check if trainer_config is empty
+        if not trainer_config:
+            logger.info("'trainer_config' is missing or empty. Returning None.")
+            return None
+
+        seed = trainer_config.get("seed", "none")
+        if isinstance(seed, str):
+            trainer_config["seed"] = _handle_seed(seed_val=None)
+
+        logger.info(f"Loaded trainer configuration: {trainer_config}")
+        return trainer_config
 
     except Exception as e:
         logger.error(f"An error occurred while processing 'trainer_config': {e}")

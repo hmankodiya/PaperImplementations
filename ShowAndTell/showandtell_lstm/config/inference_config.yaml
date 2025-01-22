@@ -36,7 +36,7 @@ tokenizer_config:
 model_config:
   showandtell_model:
     model_name: showandtell
-    model_path: "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/TrainingLogs/fulltraining_run_1/model/showtell_core.pth"
+    model_path: "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/showandtell_lstm/TrainingLogs/fulltraining_run_1/model/showtell_core.pth"
 
   image_model:
     model_name: dinov2

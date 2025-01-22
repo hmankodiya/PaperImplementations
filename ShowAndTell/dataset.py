@@ -15,7 +15,7 @@ import torch.utils
 import torch.utils.data
 from transformers import DataCollatorWithPadding
 
-from utils import preprocess_text, load_json
+from utils import load_json
 
 # Configure logger for the module
 logger = logging.getLogger(__name__)
@@ -240,7 +240,7 @@ class ImageCaptionDataset(torch.utils.data.Dataset):
         Returns:
             int: Vocabulary size.
         """
-        return self.tokenizer.vocab_size
+        return len(self.tokenizer)
 
     def __len__(self):
         """
@@ -275,7 +275,6 @@ class ImageCaptionDataset(torch.utils.data.Dataset):
         """
         instance = self.dataset[index]
         image_id, image_path = instance["image_id"], instance["file_path"]
-
         pixel_values = load_image(
             image_path,
             size=self.image_size,
@@ -304,9 +303,10 @@ class ImageCaptionDataset(torch.utils.data.Dataset):
             return dict(
                 pixel_values=pixel_values,
                 input_ids=labels,
+                labels=labels,
             )
 
-        return pixel_values, labels
+        return pixel_values, labels, labels
 
 
 class InferenceDataset(torch.utils.data.Dataset):
@@ -325,7 +325,7 @@ class InferenceDataset(torch.utils.data.Dataset):
             self.image_paths[index],
             size=self.image_size,
             return_tensors=self.return_tensors,
-            imagenet_normalize=self.kwargs.get('imagenet_normalize', True)
+            imagenet_normalize=self.kwargs.get("imagenet_normalize", True),
         )
 
         if self.return_dict:
@@ -360,13 +360,15 @@ class ImageTextCollator:
             dict: Batched data with pixel values and text inputs.
         """
         pixel_values = []
-        labels = []
+        input_ids = []
 
         for batch_dict in batch:
             pixel_values.append(torch.from_numpy(batch_dict.pop("pixel_values")))
-            labels.append(batch_dict)
+            batch_dict.pop("labels")
+            input_ids.append(batch_dict)
 
-        batch_dict = self.text_collator(labels)
+        batch_dict = self.text_collator(input_ids)
         batch_dict.update({"pixel_values": torch.stack(pixel_values)})
+        batch_dict.update({"labels": batch_dict['input_ids']})
 
         return batch_dict

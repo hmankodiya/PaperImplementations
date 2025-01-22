@@ -24,7 +24,7 @@ import fiftyone.zoo as foz
 train_dataset = foz.load_zoo_dataset(
     "coco-2014",
     split="train",
-    max_samples=1000,
+    max_samples=900,
 )
 
 val_dataset = foz.load_zoo_dataset(
@@ -137,14 +137,24 @@ For details on how to structure the configuration file, refer to [configs/train_
 
 # Results
 
+## GPT2 Text Decoder Performance
+
+- **BLEU-4 Score**: **7.0%**
+
+### Sample Inference Results on GPT2
+
+The following figure illustrates example outputs from the model's predictions on the test dataset:
+
+![Sample Inference GPT2 Results](./showandtell_gpt2/inference.png)
+
 ## LSTM Text Decoder Performance
 
 - **BLEU-2 Score**: **17.9%**
 
-### Sample Inference Results
+### Sample Inference Results on LSTM
 
 The following figure illustrates example outputs from the model's predictions on the test dataset:
 
-![Sample Inference Results](./Inference_example.png)
+![Sample Inference LSTM Results](./showandtell_lstm/inference.png)
 
 ---
