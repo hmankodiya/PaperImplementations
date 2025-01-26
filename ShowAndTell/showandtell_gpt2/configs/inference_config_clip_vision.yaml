@@ -1,0 +1,64 @@
+inference_dataset_config:
+  desc: coco-2014 caption dataset
+  return_dict: true
+  return_tensors: "pt"
+  image_size:
+    - 224
+    - 224
+  image_paths:
+    - "/home/harsh/fiftyone/coco-2014/train/data/COCO_train2014_000000000009.jpg"
+    - "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/coco-2014/inference/plane.jpeg"
+    - "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/coco-2014/inference/cats_and_dogs.jpeg"
+    - "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/coco-2014/inference/cricket.jpeg"
+    - "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/coco-2014/inference/cricket1.jpeg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000005723.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000002153.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000002753.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000004840.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000006091.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000006393.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000005599.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000005064.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000000810.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000005804.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000000775.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000001442.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000003926.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000005394.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000005586.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000006220.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000005690.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000001503.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000001525.jpg"
+    - "/home/harsh/fiftyone/coco-2014/validation/data/COCO_val2014_000000002473.jpg"
+    
+
+tokenizer_config:
+  tokenizer_name: gpt2
+  tokenizer_path: "openai-community/gpt2"
+
+model_config:
+  showandtell_model:
+    model_name: showandtell
+    model_path: /home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/showandtell_gpt2/TrainingLogs/runs/clip_gpt2_fulltraining_init/checkpoint-3600/pytorch_model.bin
+    generation_config:
+      temperature: 0.7
+      num_beams: 10
+      do_sample: true
+
+  image_model:
+    model_name: clipvision
+    # model_path: openai/clip-vit-base-patch32
+    # freeze: true
+    # config:
+    #   hidden_size: 768
+    #   image_size: 518
+    #   patch_size: 14
+
+  text_model:
+    model_name: gpt2
+    # model_path: openai-community/gpt2 # text encoder weights
+    config:
+      add_cross_attention: true
+
+    

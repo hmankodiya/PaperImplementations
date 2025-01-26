@@ -305,9 +305,10 @@ def get_image_model_config(config):
         model_name = config.pop("model_name")
         model_path = config.pop("model_path", None)
         freeze = config.pop("freeze", True)
-        config = config.pop("config", {})
+        model_config = config.pop("config", {})
+        
 
-        return (model_name, model_path, freeze, config)
+        return (model_name, model_path, freeze, model_config, config)
 
     except Exception as e:
         logger.error(f"An error occurred while processing 'model_config': {e}")
@@ -378,6 +379,7 @@ def get_showandtell_lstm_model_config(config):
     except Exception as e:
         logger.error(f"An error occurred while processing 'model_config': {e}")
         raise
+
 
 def get_showandtell_gpt2_model_config(config):
     try:
@@ -453,6 +455,7 @@ def get_showandtell_lstm_trainer_config(config):
     except Exception as e:
         logger.error(f"An error occurred while processing 'trainer_config': {e}")
         raise
+
 
 def get_huggingface_trainer_config(config):
     """

@@ -10,7 +10,7 @@ import torch
 from transformers import Dinov2Config, Seq2SeqTrainer, Seq2SeqTrainingArguments
 
 from dataset import ImageCaptionDataset, ImageTextCollator
-from image_model.image_model import load_image_model
+from image_model.image_model import load_dinov2_image_encoder
 from tokenizer import load_tokenizer
 from utils import (
     get_huggingface_trainer_config,
@@ -61,19 +61,6 @@ if __name__ == "__main__":
         help="Path to the configuration file (YAML or JSON format).",
     )
     arg_parser.add_argument(
-        "--eval_config",
-        type=str,
-        default="./configs/eval_config.yaml",
-        help="Path to the configuration file (YAML or JSON format).",
-    )
-    arg_parser.add_argument(
-        "--just_eval",
-        type=bool,
-        required=False,
-        default=False,
-        help="Just evaluate on val set.",
-    )
-    arg_parser.add_argument(
         "--validate",
         type=bool,
         required=False,
@@ -92,10 +79,7 @@ if __name__ == "__main__":
     logger.info(f"Arguments: {args.__dict__}")
 
     # Load configuration
-    if not args.just_eval:
-        config = read_yaml(args.config)
-    else:
-        config = read_yaml(args.eval_config)
+    config = read_yaml(args.config)
 
     # Initialize Tokenizer
     tokenizer_name, tokenizer_path, tokenizer_config = get_tokenizer_config(config)
@@ -109,33 +93,25 @@ if __name__ == "__main__":
     dataset_desc, (train_split_config, val_split_config, test_split_config) = (
         get_split_config(config)
     )
-    # setting defaults
-    padding_val = True
-    return_tensors_val = "pt"
 
-    train_dataset = None
-    if not args.just_eval:
-        # Prepare training dataset
-        train_dataset_path, train_sampling_config, train_dataset_config = (
-            get_dataset_config(train_split_config)
-        )
+    # Prepare training dataset
+    train_dataset_path, train_sampling_config, train_dataset_config = (
+        get_dataset_config(train_split_config)
+    )
 
-        sampling_fn_name, sampling_fn_args = (
-            train_sampling_config.pop("sampling_fn_name", "random_sample"),
-            train_sampling_config,
-        )
+    sampling_fn_name, sampling_fn_args = (
+        train_sampling_config.pop("sampling_fn_name", "random_sample"),
+        train_sampling_config,
+    )
 
-        train_dataset = ImageCaptionDataset(
-            tokenizer=tokenizer,
-            dataset_path=train_dataset_path,
-            sampling_fn=sampling_fn_name,
-            sampling_fn_args=sampling_fn_args,
-            return_tensors=None,
-            **train_dataset_config,
-        )
-
-        padding_val = train_dataset_config.get("padding", True)
-        return_tensors_val = train_dataset_config.get("return_tensors", "pt")
+    train_dataset = ImageCaptionDataset(
+        tokenizer=tokenizer,
+        dataset_path=train_dataset_path,
+        sampling_fn=sampling_fn_name,
+        sampling_fn_args=sampling_fn_args,
+        return_tensors=None,
+        **train_dataset_config,
+    )
 
     # Prepare validation dataset (if applicable)
     val_dataset = None
@@ -165,11 +141,6 @@ if __name__ == "__main__":
         logger.info(
             f"Loaded Val Dataset: {dataset_desc}, Dataset Length: {len(val_dataset)}."
         )
-        
-        if args.just_eval:
-            padding_val = val_dataset_config.get("padding", True)
-            return_tensors_val = val_dataset_config.get("return_tensors", "pt")
-            
 
     # Prepare test dataset (if applicable)
     test_dataset = None
@@ -204,14 +175,11 @@ if __name__ == "__main__":
     model_config = get_model_config(config)
 
     # Image encoder initialization
-    image_model_name, image_model_path, freeze, image_model_config, config_kwargs = (
+    image_model_name, image_model_path, freeze, image_model_config = (
         get_image_model_config(model_config)
     )
-    image_encoder = load_image_model(
-        image_model_name, image_model_config, freeze, image_model_path, **config_kwargs
-    )
-    # dinov2_config = Dinov2Config(**image_model_config)
-    # image_encoder = load_dinov2_image_encoder(**image_model_config, freeze, image_model_path)
+    dinov2_config = Dinov2Config(**image_model_config)
+    image_encoder = load_dinov2_image_encoder(dinov2_config, freeze, image_model_path)
 
     # Text encoder initialization
     text_model_name, text_model_path, text_model_config = get_text_model_config(
@@ -243,61 +211,39 @@ if __name__ == "__main__":
         image_encoder,
         gpt2_text_encoder,
         pretrained_model_path=showandtell_gpt2_core_model_path,
-        **showandtell_gpt2_core_config,
     )
 
     # Training DataLoader
     image_text_collator = ImageTextCollator(
         tokenizer,
-        padding=padding_val, # train_dataset_config.get("padding", True),
-        return_tensors= return_tensors_val # train_dataset_config.get("return_tensors", "pt"),
+        padding=train_dataset_config.get("padding", True),
+        return_tensors=train_dataset_config.get("return_tensors", "pt"),
     )
 
     trainer_config = get_huggingface_trainer_config(config)
+    trainer_config["logging_dir"] = os.path.join(
+        trainer_config["output_dir"], "runs", trainer_config["run_name"]
+    )
+    save_trained_model = trainer_config.pop("save_trained_model", True)
+    resume_from_checkpoint = trainer_config.pop("resume_from_checkpoint", None)
+    trainer_args = Seq2SeqTrainingArguments(**trainer_config)
+    trainer = Seq2SeqTrainer(
+        showandtell_gpt2,
+        args=trainer_args,
+        train_dataset=train_dataset,
+        eval_dataset=val_dataset,
+        data_collator=image_text_collator,
+        processing_class=None,
+        compute_metrics=lambda x: (compute_metrics(x, tokenizer, METRICS_DICT)),
+    )
 
-    if not args.just_eval:
-        trainer_config["logging_dir"] = os.path.join(
-            trainer_config["output_dir"], "runs", trainer_config["run_name"]
-        )
-        save_trained_model = trainer_config.pop("save_trained_model", True)
-        resume_from_checkpoint = trainer_config.pop("resume_from_checkpoint", None)
-        trainer_args = Seq2SeqTrainingArguments(**trainer_config)
-        trainer = Seq2SeqTrainer(
-            showandtell_gpt2,
-            args=trainer_args,
-            train_dataset=train_dataset,
-            eval_dataset=val_dataset,
-            data_collator=image_text_collator,
-            processing_class=None,
-            compute_metrics=lambda x: (compute_metrics(x, tokenizer, METRICS_DICT)),
-        )
+    logger.info("Training started.")
+    training_outs = trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+    logger.info("Training finished.")
 
-        logger.info("Training started.")
-        training_outs = trainer.train(resume_from_checkpoint=resume_from_checkpoint)
-        logger.info("Training finished.")
-
-        if save_trained_model:
-            logger.info(f'Saving model at {trainer_config["logging_dir"]}')
-            torch.save(
-                showandtell_gpt2.state_dict(),
-                os.path.join(trainer_config["logging_dir"], "model.pth"),
-            )
-    else:
-        trainer_config["logging_dir"] = os.path.join(
-            trainer_config["output_dir"], "runs", trainer_config["run_name"]
+    if save_trained_model:
+        logger.info(f'Saving model at {trainer_config["logging_dir"]}')
+        torch.save(
+            showandtell_gpt2.state_dict(),
+            os.path.join(trainer_config["logging_dir"], "model.pth"),
         )
-        trainer_args = Seq2SeqTrainingArguments(**trainer_config)
-        trainer = Seq2SeqTrainer(
-            showandtell_gpt2,
-            args=trainer_args,
-            data_collator=image_text_collator,
-            processing_class=None,
-            compute_metrics=lambda x: (compute_metrics(x, tokenizer, METRICS_DICT)),
-        )
-
-        logger.info("Evaluation started.")
-        eval_outs = trainer.evaluate(eval_dataset=val_dataset)
-        logger.info("Evaluation finished.")
-        
-        logger.info(f"Eval Results: {eval_outs}")
-        print(f"Eval Results: {eval_outs}")

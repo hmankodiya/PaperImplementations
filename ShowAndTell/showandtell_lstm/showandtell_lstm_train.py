@@ -186,8 +186,8 @@ if __name__ == "__main__":
     image_model_name, image_model_path, freeze, image_model_config = (
         get_image_model_config(model_config)
     )
-    dinov2_config = Dinov2Config(**image_model_config)
-    image_encoder = load_dinov2_image_encoder(dinov2_config, freeze, image_model_path)
+    # dinov2_config = Dinov2Config(**image_model_config)
+    image_encoder = load_dinov2_image_encoder(image_model_config, freeze, image_model_path)
 
     # Text encoder initialization
     text_model_name, text_model_path, text_model_config = get_text_model_config(

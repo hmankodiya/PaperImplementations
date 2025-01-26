@@ -34,6 +34,7 @@ import pickle
 def compute_metrics(data, tokenizer, metrics):
     generated_tokens, labels = data
     results = {}
+    # print(f"Outs: {generated_tokens}, {labels}")
     # with open(
     #     "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/showandtell_gpt2/TrainingLogs/gen_tokens.pkl",
     #     "wb",
@@ -45,6 +46,5 @@ def compute_metrics(data, tokenizer, metrics):
 
     labels[labels == -100] = tokenizer.pad_token_id
     labels_decoded = tokenizer.batch_decode(labels, skip_special_tokens=True)
-
     results = metrics["bleu"].compute(predictions=batch_decoded, references=labels_decoded)
     return results

@@ -40,10 +40,8 @@ class ShowAndTellGPT2(nn.Module):
         self.kwargs = kwargs
 
     @classmethod
-    def from_pretrained(
-        cls, model_path, tokenizer, image_encoder, text_encoder, **kwargs
-    ):
-        model = cls(tokenizer, image_encoder, text_encoder, **kwargs)
+    def from_pretrained(cls, model_path, tokenizer, image_encoder, text_encoder):
+        model = cls(tokenizer, image_encoder, text_encoder)
         model.load_state_dict(torch.load(model_path, weights_only=True))
         return model
 
@@ -136,7 +134,7 @@ def load_pretrained_gpt2_model(
 
 
 def load_showandtell_gpt2(
-    tokenizer, image_encoder, text_encoder, pretrained_model_path=None, **kwargs
+    tokenizer, image_encoder, text_encoder, pretrained_model_path=None
 ):
     try:
         if pretrained_model_path:
@@ -144,11 +142,11 @@ def load_showandtell_gpt2(
                 f"Loading pretrained ShowAndTellgpt2 model from: {pretrained_model_path}"
             )
             return ShowAndTellGPT2.from_pretrained(
-                pretrained_model_path, tokenizer, image_encoder, text_encoder, **kwargs
+                pretrained_model_path, tokenizer, image_encoder, text_encoder
             )
 
         logger.info("Initializing new ShowAndTellGPT2 model with provided components.")
-        return ShowAndTellGPT2(tokenizer, image_encoder, text_encoder, **kwargs)
+        return ShowAndTellGPT2(tokenizer, image_encoder, text_encoder)
     except Exception as e:
         logger.error(f"Failed to load ShowAndTellGPT2 model: {e}")
         raise
