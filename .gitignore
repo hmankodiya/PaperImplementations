@@ -5,3 +5,4 @@ __pycache__
 **/rough.ipynb
 wandb
 /coco-*
+*/TrainingLogs

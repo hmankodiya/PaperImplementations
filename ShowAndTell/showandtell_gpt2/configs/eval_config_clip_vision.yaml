@@ -31,7 +31,7 @@ tokenizer_config:
 model_config:
   showandtell_model:
     model_name: showandtell_gpt2
-    model_path: /home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/showandtell_gpt2/TrainingLogs/runs/clip_gpt2_fulltraining_init/checkpoint-4500/pytorch_model.bin # showandtell model weights
+    model_path: /media/harsh/OS/Linux/Projects/ShowAndTell/clip_gpt2_fulltraining_init/checkpoint-4500/pytorch_model.bin # showandtell model weights
     generation_config:
       temperature: 0.5
       num_beams: 10
@@ -53,7 +53,7 @@ model_config:
       add_cross_attention: true
 
 trainer_config:
-  run_name: "eval_beamsearch "
+  run_name: "eval_beamsearch"
   output_dir: "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/showandtell_gpt2/TrainingLogs/eval"
   overwrite_output_dir: true
   report_to: "tensorboard"
