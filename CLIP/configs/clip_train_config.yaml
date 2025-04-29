@@ -1,7 +1,7 @@
 dataset_config:
   desc: flicker8k dataset
   train:
-    dataset_path: "/home/harsh/Desktop/Projects/PaperImplementations/CLIP/data/train_dataset.json"
+    dataset_path: "/home/hmankodi/Projects/PaperImplementations/CLIP/data/train_dataset.json"
     return_dict: true
     padding: longest
     image_size:
@@ -12,7 +12,7 @@ dataset_config:
       sampling_fn_name: random_sample
 
   val:
-    dataset_path: "/home/harsh/Desktop/Projects/PaperImplementations/CLIP/data/test_dataset.json"
+    dataset_path: "/home/hmankodi/Projects/PaperImplementations/CLIP/data/test_dataset.json"
     return_dict: true
     padding: longest
     image_size:
@@ -36,18 +36,18 @@ trainer_config:
   save_trained_model: true
   # log outputs
   run_name: "clip_first_train"
-  output_dir: "/home/harsh/Desktop/Projects/PaperImplementations/CLIP/TrainingLogs"
+  output_dir: "/home/hmankodi/Projects/PaperImplementations/CLIP/TrainingLogs"
   overwrite_output_dir: true
   report_to: "tensorboard"
-  logging_steps: 30
+  logging_steps: 5
   logging_strategy: steps
   # train args
-  eval_on_start: false
+  eval_on_start: true
   do_train: true
-  # do_eval: true
-  # eval_strategy: epocI
-  num_train_epochs: 10
-  per_device_train_batch_size: 75
+  do_eval: true
+  eval_strategy: epoch
+  num_train_epochs: 180
+  per_device_train_batch_size: 1000
   prediction_loss_only: false
   # per_device_eval_batch_size: 45
   # log configs
@@ -69,4 +69,5 @@ trainer_config:
   optim: "adamw_torch"
   eval_accumulation_steps: 1
 
-  resume_from_checkpoint: null # "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/showandtell_gpt2/TrainingLogs/checkpoint-1800"
+  # resume_from_checkpoint: null # "/home/harsh/Desktop/Projects/PaperImplementations/ShowAndTell/showandtell_gpt2/TrainingLogs/checkpoint-1800"
+  resume_from_checkpoint: /home/hmankodi/Projects/PaperImplementations/CLIP/TrainingLogs/checkpoint-524

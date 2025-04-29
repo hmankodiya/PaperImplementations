@@ -1,13 +1,36 @@
+from argparse import ArgumentParser
 import os
 import logging
 from typing import Union, List, Optional
 
 import torch
+import torch.distributed as dist
+from torch.nn.parallel import DistributedDataParallel as DDP
 from transformers import CLIPModel, CLIPTokenizer, CLIPConfig
+
+from utils import get_model_config, get_tokenizer_config, read_yaml
 
 # Configure logger for the module
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
+
+
+def setup_distributed():
+    dist.init_process_group(backend="nccl")
+    local_rank = int(os.environ["LOCAL_RANK"])
+    torch.cuda.set_device(local_rank)
+    return local_rank
+
+
+def cleanup():
+    dist.destroy_process_group()
+
+
+def setup_distributed():
+    dist.init_process_group(backend="nccl")
+    local_rank = int(os.environ["LOCAL_RANK"])
+    torch.cuda.set_device(local_rank)
+    return local_rank
 
 
 def load_pretrained_clip_tokenizer(
@@ -142,3 +165,60 @@ def load_model(model_name, model_path=None, model_config=None, pretrained=True):
     else:
         logger.error(f"Model '{model_name}' is not registered in MODEL_DICT.")
         raise ValueError(f"Model '{model_name}' is not registered in MODEL_DICT.")
+
+
+if __name__ == "__main__":
+    """
+    Model setup script: Load model and tokenizer on correct GPU for Distributed Training.
+    """
+    # --- Setup Distributed ---
+    local_rank = setup_distributed()
+
+    # --- Argument Parsing ---
+    arg_parser = ArgumentParser()
+    arg_parser.add_argument(
+        "--config", type=str, required=True, help="Path to the configuration YAML file."
+    )
+    args = arg_parser.parse_args()
+
+    rank = dist.get_rank()
+    print(f"[Rank {rank}] 🚀 Distributed environment initialized.")
+
+    # --- Load Configuration ---
+    config = read_yaml(args.config)
+    print(f"[Rank {rank}] 📄 Config loaded.")
+
+    # --- Load Tokenizer ---
+    tokenizer_name, tokenizer_path, tokenizer_config = get_tokenizer_config(config)
+    tokenizer = load_tokenizer(
+        tokenizer_name=tokenizer_name,
+        tokenizer_path=tokenizer_path,
+        tokenizer_config=tokenizer_config,
+    )
+    print(f"[Rank {rank}] 📚 Tokenizer '{tokenizer_name}' loaded.")
+
+    # --- Load Model ---
+    model_name, model_path, model_config, pretrained = get_model_config(config)
+    model = load_model(
+        model_name=model_name,
+        model_path=model_path,
+        model_config=model_config,
+        pretrained=pretrained,
+    )
+    print(f"[Rank {rank}] 🧠 Model '{model_name}' loaded.")
+
+    # --- Move Model to Correct GPU ---
+    device = torch.device("cuda", local_rank)
+    model = model.to(device)
+    print(f"[Rank {rank}] 📦 Model moved to device: {device}.")
+
+    # --- Wrap with DistributedDataParallel ---
+    model = DDP(model, device_ids=[local_rank], output_device=local_rank)
+    print(f"[Rank {rank}] 🖇️ Model wrapped with DistributedDataParallel (DDP).")
+
+    # --- Final Status ---
+    print(f"[Rank {rank}] ✅ Model setup complete on device {device}.")
+
+    # --- Cleanup ---
+    cleanup()
+    print(f"[Rank {rank}] 🧹 Distributed resources cleaned up. Exiting.")

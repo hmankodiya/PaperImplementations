@@ -4,19 +4,21 @@ import logging
 from argparse import ArgumentParser
 
 import torch
+from accelerate import PartialState
 from transformers import Trainer, TrainingArguments
+import torch.distributed as dist
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from dataset import CLIPDataset, ImageTextCollator
-from model import load_tokenizer, load_model
+from model import load_tokenizer, load_model, setup_distributed, cleanup
 from utils import (
     read_yaml,
     get_trainer_config,
     get_tokenizer_config,
     get_model_config,
     get_split_config,
-    get_dataset_config,  
+    get_dataset_config,
 )
 
 PRECISION = "medium"
@@ -24,7 +26,7 @@ torch.set_float32_matmul_precision(PRECISION)
 
 # Configure logger
 logging.basicConfig(
-    filename="./logs/clip_training_logs.txt",
+    filename="./logs.txt",
     format="%(asctime)s - %(levelname)s - %(filename)s - %(message)s",
     level=logging.INFO,
     filemode="w",
@@ -148,3 +150,6 @@ if __name__ == "__main__":
         results = trainer.evaluate()
         logger.info(f"Evaluation finished. Results: {results}")
         print(results)
+
+    if dist.is_initialized():
+        dist.destroy_process_group()
